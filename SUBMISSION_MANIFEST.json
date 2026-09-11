@@ -1,0 +1,688 @@
+{
+  "created_utc": "2026-09-03T06:13:26.510028+00:00",
+  "project": "Predicting house prices in Bristol using machine learning and socio-economic data",
+  "purpose": "Clean submission artefact repository",
+  "raw_files_excluded": [
+    "national HM Land Registry annual CSV files",
+    "36 Avon and Somerset Police.uk street-crime CSV files",
+    "national ONS 2011 boundary file",
+    "backup and temporary files",
+    "row-level model prediction exports"
+  ],
+  "file_count_excluding_manifest": 168,
+  "total_bytes_excluding_manifest": 63088514,
+  "files": {
+    ".gitignore": {
+      "bytes": 318,
+      "sha256": "aabb9fd45fd27edd6f0d3d6bbe8159cee1504fa4ed3a9cc23cb4bccfa00aa86c"
+    },
+    ".streamlit/config.toml": {
+      "bytes": 202,
+      "sha256": "87d8e8c3463816997c93dfde6c11c48cd1555f0af7388706fac85d2ac3475c85"
+    },
+    "README.md": {
+      "bytes": 4123,
+      "sha256": "c89b54e9db3ef40f65079e1adbb0b90cf1678f1481921fe90e4ee4e31c3595a0"
+    },
+    "SUBMISSION_CHECKLIST.md": {
+      "bytes": 1889,
+      "sha256": "f3962113fad5b98fa73b4873a2bc62a807d33e83b5152e4f159079af3644e7c4"
+    },
+    "analysis/01_dataset_quality_and_price.py": {
+      "bytes": 17133,
+      "sha256": "de27a814d7f67da70b47b2ce07574fc37ff42cf9e37311c85dfdc83ba5126253"
+    },
+    "analysis/02_property_characteristics_eda.py": {
+      "bytes": 21044,
+      "sha256": "1560ffee0d4dd191a4045ff285a88a1bdc2eb18cea2ace03fc44cf4faf7aca1a"
+    },
+    "analysis/03_neighbourhood_conditions_eda.py": {
+      "bytes": 30669,
+      "sha256": "5990ce62c32e05a053005acc8addb8a9c97da3404d7248c6a794305f626d29bc"
+    },
+    "analysis/04_property_only_linear_baseline.py": {
+      "bytes": 34234,
+      "sha256": "b401998b66c6648988989325d4d7cb64b3c9e3eed5f901340ab827417f064616"
+    },
+    "analysis/05_enriched_linear_model.py": {
+      "bytes": 36329,
+      "sha256": "d754d9caf36132a140754ab36e8fe66ff65e98c5513c0273aadfaacf53062da3"
+    },
+    "analysis/06_property_only_random_forest.py": {
+      "bytes": 36048,
+      "sha256": "727c0f490e74562c67e84ffe2e3e3fba1681de2ec4ed1016cb45b8dff5288a30"
+    },
+    "analysis/07_enriched_random_forest.py": {
+      "bytes": 35280,
+      "sha256": "3794ff6484d41870cc426e49508119f974bb3c211e51884332d2714ebae64ada"
+    },
+    "analysis/08_gradient_boosting_comparison.py": {
+      "bytes": 41998,
+      "sha256": "07a92c5807eb37e720f6b186618b54817a0fb8b9dcffc2826354c80d604507d8"
+    },
+    "analysis/09_lagged_neighbourhood_sensitivity.py": {
+      "bytes": 38475,
+      "sha256": "3527fb5c9598860b237a490c70f5c4d7db6e5fdedfda140c1aae6ac77ef7ddcb"
+    },
+    "analysis/10_prepare_dashboard_artefact.py": {
+      "bytes": 15527,
+      "sha256": "0f304b7f4caf7bd0d5f741d301b32401eb62538c5f958ddd94fdfc7f373ad058"
+    },
+    "analysis/11_validate_submission_artefact.py": {
+      "bytes": 5043,
+      "sha256": "a19ff6a4581844f0980d786daba71273599a635a53d77565fc95896292435432"
+    },
+    "analysis/12_build_submission_package.py": {
+      "bytes": 6300,
+      "sha256": "3b2ccd2d58e1534df876243553cc5281bb2332b1fb41729ee709647cb4e7fd31"
+    },
+    "combine_bristol_house_prices.py": {
+      "bytes": 16244,
+      "sha256": "3d1ee4cd2cfe02fc9b330c9a4365874c5ff7f63cd79192eefcc3bb6d34b04f0e"
+    },
+    "dashboard/ARTEFACT_EVALUATION.md": {
+      "bytes": 3270,
+      "sha256": "7ad4e4ae4faf8c32e51072ebb61bf36b59cec7298efe9985dcf2b905609c0236"
+    },
+    "dashboard/README.md": {
+      "bytes": 1952,
+      "sha256": "5b11802f044a39654cbc17859c05cdecced90eca134c65d30749298d8cd139a3"
+    },
+    "dashboard/app.py": {
+      "bytes": 7059,
+      "sha256": "957da303168ba0c24562dcac9811d58392a441f7a45098ffc87b21f19d22e27b"
+    },
+    "dashboard/dashboard_validation.json": {
+      "bytes": 4288,
+      "sha256": "37777c69336d1c0d1164d1b0345b176b102601d22f7797ececdfda5a5a2c1150"
+    },
+    "dashboard/data/bristol_postcode_lsoa11.csv": {
+      "bytes": 788266,
+      "sha256": "49587511b6c638b65443e3d06a20aeccd065644797e1f2ad2bb2ece6207b4e87"
+    },
+    "dashboard/data/dashboard_validation_cases.csv": {
+      "bytes": 421,
+      "sha256": "e06690d9b1940c407a38ca0444f88cfbb7395b2455eefbee33d34c96e5fb933f"
+    },
+    "dashboard/data/lagged_neighbourhood_features_2024.csv": {
+      "bytes": 166614,
+      "sha256": "a89e29be73f3557ca4ec5efce995fb5095fbe4fcc5979611c82b993bcfa8aec6"
+    },
+    "dashboard/data/model_performance_2024.csv": {
+      "bytes": 294,
+      "sha256": "4c195f70e8e20bb8ace854076fc3828a137ec2182219afec2f143f5ae263e046"
+    },
+    "dashboard/model_card.json": {
+      "bytes": 1791,
+      "sha256": "d1011a55cf8ad651f9ff57b922daabe07f650a70007968143b48bff7d05c144a"
+    },
+    "dashboard/prediction.py": {
+      "bytes": 5996,
+      "sha256": "a8511f13074fc93c80f66e1514189ee4e41a0dd796c853d9414447dd940d0249"
+    },
+    "dashboard/requirements.txt": {
+      "bytes": 83,
+      "sha256": "1b9f87e5cebf00f3034eb88e53a3741a2f17673d51cb41f5a284abdda4a8c123"
+    },
+    "docs/AI_ASSISTANCE_RECORD.md": {
+      "bytes": 1694,
+      "sha256": "2a3710d8a3549d1e5bdd6f160bcacea588dd17da0a62da527c13a3b9a60fe96a"
+    },
+    "docs/DATA_DICTIONARY.md": {
+      "bytes": 6788,
+      "sha256": "4ddc1601e8458f78693d1849c3471da1a55cd90f991e1ba49cc5e05875d1613e"
+    },
+    "docs/DATA_SOURCES.md": {
+      "bytes": 4348,
+      "sha256": "2b44802d35a79864153a86bc7041ec1dbc2ed5919109cf64c916ea31ef0c363f"
+    },
+    "docs/ETHICS_AND_LIMITATIONS.md": {
+      "bytes": 4192,
+      "sha256": "201f38b6b14f2203b47f847b5b52b80273d5b8a26feeff5745210cab53a03271"
+    },
+    "docs/METHODOLOGY.md": {
+      "bytes": 5167,
+      "sha256": "2c544d9f72ff1c9c16237ff531e479c6878542ae4e72fbf2a2b39d7a9209e42e"
+    },
+    "docs/PROJECT_SCOPE.md": {
+      "bytes": 2871,
+      "sha256": "19dc0d49955d1e65ddf94bba49ace5a1a438ed4b3f436beff05c2e4b4d84c295"
+    },
+    "docs/REPRODUCIBILITY.md": {
+      "bytes": 3879,
+      "sha256": "a2182eddcb1f9ffba90aac9df3094a85d35f3795e2bfc001b8f6065beed71c9e"
+    },
+    "docs/RESULTS_SUMMARY.md": {
+      "bytes": 3364,
+      "sha256": "af91b40753c03b4f15dfc0c6ee7755071e03ac285b37570e6cc675b2d6197da7"
+    },
+    "download_validate_onspd_bs.py": {
+      "bytes": 9434,
+      "sha256": "fd28cc1067111c71f381adc78a26b0e1b45de9bb819306046a86998f3a94dda7"
+    },
+    "models/09_lagged_enriched_random_forest.joblib": {
+      "bytes": 21208963,
+      "sha256": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399"
+    },
+    "outputs/bristol_house_prices_combined_2022_2024.csv": {
+      "bytes": 7474971,
+      "sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6"
+    },
+    "outputs/bristol_house_prices_combined_2022_2024.validation.json": {
+      "bytes": 2126,
+      "sha256": "d10bfa6528c5675369f3218b41bf922e49569fd9c9c9df88a1e5c5e5651b9912"
+    },
+    "outputs/candidate/bristol_house_prices_2022_2024_candidate.validation.json": {
+      "bytes": 2140,
+      "sha256": "39141af46c7b4b8bb0f41f521659003bfe741700df87e99d0912f07835609f61"
+    },
+    "outputs/candidate/claimant_features_2022_2024_lsoa11_candidate.csv": {
+      "bytes": 1587910,
+      "sha256": "05b16d006c0599a96b95b93fcd0e02861d5ba8fe6713be6ae2c20eb2bf21b5d4"
+    },
+    "outputs/candidate/claimant_features_2022_2024_lsoa11_candidate.validation.json": {
+      "bytes": 8920,
+      "sha256": "09c0c8eb84cbf6e8a87d9747e51ed8f44b234bd76710c8b8d0d1a8c86e6dc563"
+    },
+    "outputs/candidate/crime_features_2022_2024_lsoa11_candidate.csv": {
+      "bytes": 464982,
+      "sha256": "ba2c20aa144ba9098d384650c8c9d8ea925d231761209e7c9647541bbb1baa41"
+    },
+    "outputs/eda/01_candidate_cohort_summary.csv": {
+      "bytes": 254,
+      "sha256": "25c639faae1bc27f6c0a43d5a752372339fbaca0b2a5629b7aa9382f1ff1eb28"
+    },
+    "outputs/eda/01_dataset_quality_summary.csv": {
+      "bytes": 1065,
+      "sha256": "4a44a2096d3d71f4df9bb811d1a02d3265b2d7461e528afa36a7f8de376b3856"
+    },
+    "outputs/eda/01_initial_eda.validation.json": {
+      "bytes": 1747,
+      "sha256": "2900927e1dd5423361f1f32ee4cfacbd989f6c686b576ed1945752b9f2dbf2e6"
+    },
+    "outputs/eda/01_initial_eda_findings.md": {
+      "bytes": 3252,
+      "sha256": "45bce478dd6175866a61920669189127dae63e2453b2740a2e1db1f41fb0a714"
+    },
+    "outputs/eda/01_missingness_summary.csv": {
+      "bytes": 1704,
+      "sha256": "e6029af86bd46247fe9e9a0b09546c64dce590f31a9ab6db299dd976d4ecc3f5"
+    },
+    "outputs/eda/01_monthly_sales_and_median_price.png": {
+      "bytes": 224971,
+      "sha256": "53b8600659323edfaf7631e9a9d5a1a8783b7359b69250c2e61132018198af8c"
+    },
+    "outputs/eda/01_monthly_summary.csv": {
+      "bytes": 1945,
+      "sha256": "3fded240f580ac499f3773f91597b664f628f04c791b59d7e39ede11c271dec5"
+    },
+    "outputs/eda/01_price_distribution_raw_vs_log.png": {
+      "bytes": 136060,
+      "sha256": "de5295289681f74ba88bac154b6c6fb318e830837a5f13bed7915e490fc0fb84"
+    },
+    "outputs/eda/02_annual_median_price_by_property_type.png": {
+      "bytes": 119423,
+      "sha256": "1d51a46015963849d54d9e6a46b0ca6676aa00d4dcf12ff53676e58ac3938fb8"
+    },
+    "outputs/eda/02_duration_by_property_type_summary.csv": {
+      "bytes": 860,
+      "sha256": "d6afd65312dc4d733c740c9b862d5becec4202ede37ff1fc21e66f2781cd2e00"
+    },
+    "outputs/eda/02_duration_summary.csv": {
+      "bytes": 279,
+      "sha256": "6113c2096fa121b32bbe9acb17480359a59de7c56431c0966631fa4d3db25365"
+    },
+    "outputs/eda/02_median_price_by_property_type.png": {
+      "bytes": 109771,
+      "sha256": "3549147467f6bfda13f41b8089236b5112657cca4ac1c7c8e1737300fbf6d67c"
+    },
+    "outputs/eda/02_new_build_by_property_type_summary.csv": {
+      "bytes": 875,
+      "sha256": "c6d308c6e79da350139169f99fce886cbc2e86f2f66a8ae7b18d713dda42dbdf"
+    },
+    "outputs/eda/02_new_build_summary.csv": {
+      "bytes": 283,
+      "sha256": "cdc661de1b7008939d4b26d8ef091d93104565ee98428ec738d962e1584400d1"
+    },
+    "outputs/eda/02_property_characteristics_eda.validation.json": {
+      "bytes": 2591,
+      "sha256": "731ce7f376473011036f669d1d1d943310865ec2e8becbbe089b63b72b68ce50"
+    },
+    "outputs/eda/02_property_characteristics_findings.md": {
+      "bytes": 3153,
+      "sha256": "f26003a20942d317b3261804ebcd089d8651db42d451dac5f90a71105738e7da"
+    },
+    "outputs/eda/02_property_type_summary.csv": {
+      "bytes": 441,
+      "sha256": "9e17933533f91addc5a3b1d1acc2b21b33f42d9e33a13baae95b04c4bb37d92d"
+    },
+    "outputs/eda/02_property_type_year_summary.csv": {
+      "bytes": 1068,
+      "sha256": "50dd3074b5f3ff9ae9d75a2d249e211c216df8dd726c455a9ae67ced354d87f3"
+    },
+    "outputs/eda/02_tenure_and_new_build_by_property_type.png": {
+      "bytes": 230676,
+      "sha256": "b6f3ed98c1854ea2ef33abbce99b126744a5bc951314aacdb8d0131293d9c65c"
+    },
+    "outputs/eda/02_year_summary.csv": {
+      "bytes": 334,
+      "sha256": "e4b59fab08374c235cb0e9521fbd25d3a2f9ed685b7b845945e920f5dd9676c9"
+    },
+    "outputs/eda/03_lsoa_neighbourhood_summary.csv": {
+      "bytes": 43467,
+      "sha256": "fc91da119706749b6471a0f473caf600623a991a4b2b4e6ce789206b29b43c3b"
+    },
+    "outputs/eda/03_lsoa_price_relationships.png": {
+      "bytes": 498529,
+      "sha256": "a873c97ec70dd23fa81ebedce35bd02ae58eca8d29a5ce1915e1dfdaabe84f15"
+    },
+    "outputs/eda/03_monthly_neighbourhood_features.png": {
+      "bytes": 262126,
+      "sha256": "52b7a7a77b7f09fe25b9e1bc0ae78c370e1bd8a9edaa5d5e56059b38546c0907"
+    },
+    "outputs/eda/03_monthly_neighbourhood_summary.csv": {
+      "bytes": 2350,
+      "sha256": "4027ab0494b92b2282cf2d7744924d90010da58e254811a27488b9a06a59aecb"
+    },
+    "outputs/eda/03_neighbourhood_conditions_eda.validation.json": {
+      "bytes": 3022,
+      "sha256": "759181d5379691fdcd58e9271b1d409a9ac7704f5800c82412dfb30541c698d0"
+    },
+    "outputs/eda/03_neighbourhood_conditions_findings.md": {
+      "bytes": 4267,
+      "sha256": "81b4fcdf5a04980f3cb525335b75ff7fe60e77c88e22326f30625c46811437c3"
+    },
+    "outputs/eda/03_neighbourhood_correlation_summary.csv": {
+      "bytes": 1048,
+      "sha256": "1bbaccfc119177d88568cb19eabbf61a36aa1bd0c590a9224ac9b6375557fcd6"
+    },
+    "outputs/eda/03_neighbourhood_feature_distribution_summary.csv": {
+      "bytes": 1420,
+      "sha256": "efebd99fe7ced58d80f241d0492b2da9afdf30f9053aec45c1959172186dcf39"
+    },
+    "outputs/eda/03_neighbourhood_feature_distributions.png": {
+      "bytes": 163013,
+      "sha256": "8abb42500a6ec07d014f113821217c8035540c1a4edf0c4b6511a5e19b525e6c"
+    },
+    "outputs/eda/03_neighbourhood_quintile_prices.png": {
+      "bytes": 235965,
+      "sha256": "030e133e9a67e9f9ee8050541245b39993f6ef4e6ad1ed3bb75a2f6a4fd74a2a"
+    },
+    "outputs/eda/03_neighbourhood_quintile_summary.csv": {
+      "bytes": 1927,
+      "sha256": "9af019e310c0825e9fdbd36feafc9494209f0b88a3e308d493ca057d5fe0cd98"
+    },
+    "outputs/eda/03_property_type_neighbourhood_correlations.csv": {
+      "bytes": 1016,
+      "sha256": "4b2b05260bd611fd44803695513ee0bb19ed925763e7e811543ced2a5128e8a1"
+    },
+    "outputs/models/04_baseline_actual_vs_predicted.png": {
+      "bytes": 245804,
+      "sha256": "0e71e17cfcdb3b644ae6d930e3370ce01d5284351e148e36b30a68ba71812bb4"
+    },
+    "outputs/models/04_baseline_coefficients.csv": {
+      "bytes": 749,
+      "sha256": "6a9f0836af990a0b89de6a634cacf722a220919c296708ac67882ad77fcf35ec"
+    },
+    "outputs/models/04_baseline_cross_validation_metrics.csv": {
+      "bytes": 1942,
+      "sha256": "07177bdd65578dba199a2f3894de36fbdcdf62ef29d51b91c9787bec4b90d38d"
+    },
+    "outputs/models/04_baseline_error_by_property_type.csv": {
+      "bytes": 2010,
+      "sha256": "3a81bf91c3dc94aec58b6e9af5b07e36ef75508ae12487eba012fe02eb29592b"
+    },
+    "outputs/models/04_baseline_model_performance.png": {
+      "bytes": 217906,
+      "sha256": "71a3ac83712febd99377ed8e6efa14385e8367778f8ffad1a0da5f347fba9c2e"
+    },
+    "outputs/models/04_baseline_monthly_performance.csv": {
+      "bytes": 2597,
+      "sha256": "07d1b8e54e06108364dbc723da438824ea6eb4b9235720ac6c1e367df3a8c016"
+    },
+    "outputs/models/04_baseline_split_summary.csv": {
+      "bytes": 576,
+      "sha256": "4ceeaab4a8cd79c01886d8219f2b43528f8e749abec2c35ed035c0e3dff5c159"
+    },
+    "outputs/models/04_baseline_test_metrics.csv": {
+      "bytes": 585,
+      "sha256": "2fff2524927a71d5e9fcb379161e58c944522784fc6658859ab49b5a596ff124"
+    },
+    "outputs/models/04_property_only_baseline.metadata.json": {
+      "bytes": 1207,
+      "sha256": "918f9a0122dfbd896d2b49cea292e65629a437c1a29e02978cefe694c7a1540f"
+    },
+    "outputs/models/04_property_only_baseline.validation.json": {
+      "bytes": 2626,
+      "sha256": "96225e28c99ed6f74271644bbeddf8979fcf9fac38a1475bbae4f95a133b891f"
+    },
+    "outputs/models/04_property_only_baseline_findings.md": {
+      "bytes": 4227,
+      "sha256": "c7583036161fe2ef46b7dfafc1fbb067317a1707130ccc67e79309723adfe34c"
+    },
+    "outputs/models/05_baseline_vs_enriched_comparison.csv": {
+      "bytes": 1328,
+      "sha256": "c64ec6908e4c4ee48f40ae8d7e6360fa358ef6c91f43dafdeb5fad614f616957"
+    },
+    "outputs/models/05_baseline_vs_enriched_performance.png": {
+      "bytes": 136588,
+      "sha256": "01f31dc375d4872f1acd0734e5b949de85b1fc3da92bbdc5acf62bcd5023ed29"
+    },
+    "outputs/models/05_enriched_actual_vs_predicted.png": {
+      "bytes": 421027,
+      "sha256": "7178cd34949724c471382368d4a1b41c61dc4c9c65e7efd0dc0855c90887809a"
+    },
+    "outputs/models/05_enriched_coefficients.csv": {
+      "bytes": 934,
+      "sha256": "6f31f553dffcb0a0b0ac3108359218ec049c0cb0f3dc4464c0928106e1b952f2"
+    },
+    "outputs/models/05_enriched_cross_validation_metrics.csv": {
+      "bytes": 1378,
+      "sha256": "395c5e04742019a8cf0894ea1ae794e47089fbd90705aa7133534ed1db3be902"
+    },
+    "outputs/models/05_enriched_error_by_property_type.csv": {
+      "bytes": 1383,
+      "sha256": "21c83a553c7b00f6a225dbabbf5793752d170c1e914ad0b1cd42c737b86385df"
+    },
+    "outputs/models/05_enriched_linear.metadata.json": {
+      "bytes": 1319,
+      "sha256": "2157d61f01343bfad958d6095fa121acb8a0433e3ac8b5fcbf09028872d727cf"
+    },
+    "outputs/models/05_enriched_linear.validation.json": {
+      "bytes": 3327,
+      "sha256": "d626f0fb5c42aa6cdb8d151cc7b744b06dfdc304bbc46d1996167d67c7e586cc"
+    },
+    "outputs/models/05_enriched_linear_findings.md": {
+      "bytes": 3930,
+      "sha256": "ccbd71d7ba64b9abf5552d8a878a8de0abe329336afc3c17d1a9424f571ff1cb"
+    },
+    "outputs/models/05_enriched_monthly_performance.csv": {
+      "bytes": 2952,
+      "sha256": "5f482b5bd5d2ec9b1db616e9915a8fd0ac65b1323a8de3574a6f3d4d60ce2467"
+    },
+    "outputs/models/05_enriched_test_metrics.csv": {
+      "bytes": 442,
+      "sha256": "81695c42f10368cdb61a6e2800e0b8294d619e64cc4f17caefa9f0337cd0ee31"
+    },
+    "outputs/models/05_neighbourhood_feature_effects.csv": {
+      "bytes": 549,
+      "sha256": "2b104c3f991b47b9f32eabfc471c0f5850f6ea8450a731f026398fac92279c6e"
+    },
+    "outputs/models/06_property_rf.metadata.json": {
+      "bytes": 1337,
+      "sha256": "eed904a6504ed74c375d60dec4a98ad17cc006d911f14ca0a32b9c53a95cca13"
+    },
+    "outputs/models/06_property_rf.validation.json": {
+      "bytes": 3363,
+      "sha256": "8d6725f3f0dd49c07977081c9fcae71103eedd63fef4718d8df257d19019d536"
+    },
+    "outputs/models/06_property_rf_actual_vs_predicted.jpg": {
+      "bytes": 140754,
+      "sha256": "8662e29390a0eafe466a3f4692fe84e2bce580d064713cb9f762c47ccc56e46b"
+    },
+    "outputs/models/06_property_rf_cross_validation_metrics.csv": {
+      "bytes": 1386,
+      "sha256": "9934549fab79b640533962ac82782ff1d32d02f3801dc32165cc98b14ec05643"
+    },
+    "outputs/models/06_property_rf_error_by_property_type.csv": {
+      "bytes": 1404,
+      "sha256": "8f984c7e512643795da114586dac5a6b8ffaf07b44d90010e30c8d41389f72fd"
+    },
+    "outputs/models/06_property_rf_feature_importance.csv": {
+      "bytes": 548,
+      "sha256": "00638ef4957e5331cfe3cc619a1c4d46b71a4083996092d97d0f11f67eb908b2"
+    },
+    "outputs/models/06_property_rf_findings.md": {
+      "bytes": 3588,
+      "sha256": "a349376a985ecb453ddf2be2bdc85fa66428dcf7c9c9a1eaaa025fa50be23c5d"
+    },
+    "outputs/models/06_property_rf_hyperparameter_search.csv": {
+      "bytes": 1566,
+      "sha256": "050a470e770acf929250e3a48764487cf319e1d20fe55bf76f77a1afb4d892f6"
+    },
+    "outputs/models/06_property_rf_monthly_performance.csv": {
+      "bytes": 2971,
+      "sha256": "620a9f4f82e508989c75574ae970b18f7f75dccf93ea4e6be5a67c187d247b5b"
+    },
+    "outputs/models/06_property_rf_performance.png": {
+      "bytes": 143574,
+      "sha256": "aa3b1a60662412ab57a79612b425f518ff12347868fe6633e8acc3b82ae475d3"
+    },
+    "outputs/models/06_property_rf_test_metrics.csv": {
+      "bytes": 444,
+      "sha256": "ed37d170341e41248a968efb56732de8ff74bdb577c878898ab4ef27c132d859"
+    },
+    "outputs/models/06_property_rf_vs_linear_comparison.csv": {
+      "bytes": 1270,
+      "sha256": "e0f30742a121545b1a40642896e38f23c19768857fae1633ea64e1ea90bd69d6"
+    },
+    "outputs/models/07_enriched_rf.metadata.json": {
+      "bytes": 1314,
+      "sha256": "3bd41be652760fd54e772c1eda62ebf1d989d7bad3aafd6cef135d00fa96f31e"
+    },
+    "outputs/models/07_enriched_rf.validation.json": {
+      "bytes": 3578,
+      "sha256": "0fe88b252c8b9dc6c252fdf94cfc2f8303107f0965e44ecc8ba605e605fc243e"
+    },
+    "outputs/models/07_enriched_rf_actual_vs_predicted.png": {
+      "bytes": 463716,
+      "sha256": "0cbb52c9fc9784542fce52df5f006cbd4d790274be8d338624b43ab517c3bab1"
+    },
+    "outputs/models/07_enriched_rf_cross_validation_metrics.csv": {
+      "bytes": 1351,
+      "sha256": "b92e348085dd5a0feaae92a9eb84b35bedae332d4fb404b1a87b29679c616c81"
+    },
+    "outputs/models/07_enriched_rf_error_by_property_type.csv": {
+      "bytes": 1348,
+      "sha256": "670343eab6fd2a92c18ced7605053d07d820ebbd0f7e817de677e4198e192d9b"
+    },
+    "outputs/models/07_enriched_rf_feature_importance.csv": {
+      "bytes": 714,
+      "sha256": "5b53fe2dea0ac0017f367dbfce82fbcff915aa36b69d78b925924631bbe1ac7a"
+    },
+    "outputs/models/07_enriched_rf_findings.md": {
+      "bytes": 3089,
+      "sha256": "1671778e55de8ebde18ae663ebfbf86d033e5d37ce903d387178bd02e1cbd309"
+    },
+    "outputs/models/07_enriched_rf_hyperparameter_search.csv": {
+      "bytes": 1544,
+      "sha256": "6093382ca7377956d076d6445fc9b75618b1663506f49c70107d2d6eb50730d0"
+    },
+    "outputs/models/07_enriched_rf_model_comparison.csv": {
+      "bytes": 1081,
+      "sha256": "b0fb568a39b5231ad806a0fd045ad7f59fa15377c021974c6cd3a28cc29ea6aa"
+    },
+    "outputs/models/07_enriched_rf_monthly_performance.csv": {
+      "bytes": 2910,
+      "sha256": "56a0733b0694dfc0f6df7a25da475cc0406480ead1d34d998733759382d35f76"
+    },
+    "outputs/models/07_enriched_rf_performance.png": {
+      "bytes": 130229,
+      "sha256": "66bd789921e5a110e16532eacdb121296747d44340641065159990426b4f2afb"
+    },
+    "outputs/models/07_enriched_rf_test_metrics.csv": {
+      "bytes": 432,
+      "sha256": "4dab170a635781b6a8f4d9b83d0938c01ac4c56e5f6465a479a050c2cd7ccfdd"
+    },
+    "outputs/models/08_enriched_gb_actual_vs_predicted.png": {
+      "bytes": 458475,
+      "sha256": "f2efc43633cd6a0d45e1d6bc292b14b2d4e3f3bc1a7a8e7079b0795ea8148906"
+    },
+    "outputs/models/08_enriched_gb_permutation_importance.png": {
+      "bytes": 82459,
+      "sha256": "e50a432e99e91e1fd882272edbf49c895dd390b3b335d64bc0a59a3b727bfe0b"
+    },
+    "outputs/models/08_gb_all_model_comparison.csv": {
+      "bytes": 1484,
+      "sha256": "39768056f758ecc72a7c6f167b909e172566b0c4a537cd095096c4469ac62223"
+    },
+    "outputs/models/08_gb_cross_validation_metrics.csv": {
+      "bytes": 2680,
+      "sha256": "3cb3b8de9b4b5da50a9f1c47a3f23af81104c7eda6453250cdee8ba034419498"
+    },
+    "outputs/models/08_gb_error_by_property_type.csv": {
+      "bytes": 1354,
+      "sha256": "72af62e2f34a7a7c6d48c13c090249259e45b312995bdcce655940d939188ec2"
+    },
+    "outputs/models/08_gb_hyperparameter_search.csv": {
+      "bytes": 2347,
+      "sha256": "87006ba07a403cd4aac247bdbf004132988638ff54d85ef26f18181106d32dae"
+    },
+    "outputs/models/08_gb_model_performance.png": {
+      "bytes": 136899,
+      "sha256": "85af59e657ab6fcb2501ca1c23f31ab0792d490fef1c4d2d9cea99722c30d49b"
+    },
+    "outputs/models/08_gb_monthly_performance.csv": {
+      "bytes": 4873,
+      "sha256": "1a6cddbe426f0b776f24bec6f5192eb0d47a2470ff944873ac94f29ab8ee672d"
+    },
+    "outputs/models/08_gb_permutation_importance.csv": {
+      "bytes": 724,
+      "sha256": "3926a79b2613cfa1a70e7dc83b20bac5207d9b8cca6e9eac59c412d528635d97"
+    },
+    "outputs/models/08_gb_test_metrics.csv": {
+      "bytes": 788,
+      "sha256": "21f62fc04e6bf3a701e6283a1d1963a881a42485e6219e07bb14cfc86150f696"
+    },
+    "outputs/models/08_gradient_boosting.metadata.json": {
+      "bytes": 2496,
+      "sha256": "a57778cf13577b5647dc75fa16aa48f243d0bd45bf0c6e4304f4791a923b3458"
+    },
+    "outputs/models/08_gradient_boosting.validation.json": {
+      "bytes": 3782,
+      "sha256": "19d1ec8f46ec2caca78efc7ade0fd1bf4ac0a04a7644d33980b4b2c83f114f79"
+    },
+    "outputs/models/08_gradient_boosting_findings.md": {
+      "bytes": 3037,
+      "sha256": "025ab67e5e3a43c865f68a0b8ab8102879fc342e198f630b0201a5a134369a71"
+    },
+    "outputs/models/09_lagged_neighbourhood.metadata.json": {
+      "bytes": 1964,
+      "sha256": "318447ca928fa66a62419c3df037ba4fc0736a246edaa104ec3975009d53ad44"
+    },
+    "outputs/models/09_lagged_neighbourhood.validation.json": {
+      "bytes": 4257,
+      "sha256": "d2344626b3c621e58f5439f4839ad3d663479ddefa9239d93d354aad913f0efd"
+    },
+    "outputs/models/09_lagged_neighbourhood_findings.md": {
+      "bytes": 3174,
+      "sha256": "267fd6c086741837733d1523e16dfc3187a759b155d2dcd8451d9a58604dae8d"
+    },
+    "outputs/models/09_lagged_sensitivity_cross_validation_metrics.csv": {
+      "bytes": 4213,
+      "sha256": "303e3de2497b75e33cece1a39303547935dc6cc547ccd909cdae4b1b20dc5a50"
+    },
+    "outputs/models/09_lagged_sensitivity_error_by_property_type.csv": {
+      "bytes": 2102,
+      "sha256": "e4d1e277751ee6b9b25b187b5bd385631a715fece298c75ee6c8f68972863d29"
+    },
+    "outputs/models/09_lagged_sensitivity_model_comparison.csv": {
+      "bytes": 805,
+      "sha256": "34a0cd8d70cf1c20c549b4dd801c668b2e16635b69e626ca1e72c349506db1b8"
+    },
+    "outputs/models/09_lagged_sensitivity_monthly_mae.png": {
+      "bytes": 190164,
+      "sha256": "b8de855325a85e7810b845593310080e9e397f984f2edc7b1168f00ed766147f"
+    },
+    "outputs/models/09_lagged_sensitivity_monthly_performance.csv": {
+      "bytes": 6225,
+      "sha256": "e25974de9a14f5e1bfe82b267222570d0ea8767e30ce5edd1fea07354da1b66f"
+    },
+    "outputs/models/09_lagged_sensitivity_performance.png": {
+      "bytes": 130866,
+      "sha256": "36f097a579cd545f99301b5b4797d3d8bdbbbd4173a8e6c5872b63a43c2b9de2"
+    },
+    "outputs/models/09_lagged_sensitivity_test_metrics.csv": {
+      "bytes": 1196,
+      "sha256": "f95ab88b5ac6fd450cc947673515eb97b55c85e785c0801c133c0135446f6e30"
+    },
+    "prepare_claimant_features.py": {
+      "bytes": 12766,
+      "sha256": "2fa792eeaf1f3bc9b6283be79386676aa5349c4b6244bd0727122a3fa461f3a3"
+    },
+    "prepare_crime_features.py": {
+      "bytes": 13591,
+      "sha256": "2a54c2cb8045638a847c7168b751580a4d0885f0bf3f5a38b69a67389f96f2e9"
+    },
+    "prepare_lsoa11_boundaries.py": {
+      "bytes": 4620,
+      "sha256": "96116a6c1818f2b2dc7d1fee7f659d3d710658a5eab7f262babaa2346e2cd94d"
+    },
+    "requirements.txt": {
+      "bytes": 98,
+      "sha256": "511864b1c3bb41c56971cbd8c242ebbff7bb4edd1454af8bac3abb4393636437"
+    },
+    "run_project.py": {
+      "bytes": 2438,
+      "sha256": "b6741c5f35f8aacd131960fdd875f257fad8b62108efb72e9eb5cf5d6820d44d"
+    },
+    "test_june_2023_lsoa11_conversion.py": {
+      "bytes": 7086,
+      "sha256": "a844beadfd9f01e9a5acfda1b300fdde109457b8999210ff85477fa6724cd623"
+    },
+    "test_lsoa11_assignment.py": {
+      "bytes": 14897,
+      "sha256": "6ba4b9939bbb57879931bf3b66853d4a817c14914631e64cba31bb7944e4f3f5"
+    },
+    "tests/test_dashboard_prediction.py": {
+      "bytes": 2555,
+      "sha256": "18bf56ecc79a49bb44092a26ae547ea2b93c7a68e4cc7755965831f1136949f0"
+    },
+    "upload/Bristol wide monthly socioeconomic control.csv": {
+      "bytes": 2189,
+      "sha256": "ee02fe3ec482d8aeef61c897f062837205a7e8f72874d2b2a7a67803bae3b17f"
+    },
+    "upload/RAW_DATA_REQUIRED.md": {
+      "bytes": 575,
+      "sha256": "ce9d353a97b9fa8754bc688335e2f7b79ee1db6eb68b2cec9484cecbab6e49cd"
+    },
+    "validate_crime_candidate.py": {
+      "bytes": 6535,
+      "sha256": "6aa67e239c7c4fecad53b07e91f4016cf0e8619d7e2fce8fb8a161b2312b73eb"
+    },
+    "validate_land_registry_year.py": {
+      "bytes": 8133,
+      "sha256": "65ddd45488fbba1c758ee3ff46d2432ed844fae8b4c2925ad220c089bf9d58fc"
+    },
+    "validate_property_candidate.py": {
+      "bytes": 10749,
+      "sha256": "fa02a9245283aa25a22e3030770e7f0fb937d1b6ea21756d7e04009e6ddb6aaa"
+    },
+    "verified_sources/ONSPD_MAY_2026_UK_BS_complete.csv": {
+      "bytes": 20242507,
+      "sha256": "addda8c1d04a4ea8126d82fda4c195afc4cfe7ba92149d05d18d0c3dc507e390"
+    },
+    "verified_sources/bristol_lsoa11_boundaries_bfc_v3.geojson": {
+      "bytes": 4488747,
+      "sha256": "1af593b2009f1ebaf94d5822a60b05c9176dc012fdb421a44852c09f7f25d274"
+    },
+    "verified_sources/land_registry/RAW_DATA_REQUIRED.md": {
+      "bytes": 561,
+      "sha256": "c43d3e09ffff2d4d78be31f4838b23194d6eb65788252bf6fc3ca58c57dc5043"
+    },
+    "verified_sources/land_registry/land_registry_source_validation_2022_2024.md": {
+      "bytes": 2261,
+      "sha256": "03c16aa06e5fe493832cb05dd361a31431cb78cb1847520ff8198a680d7292e6"
+    },
+    "verified_sources/land_registry/pp-2022.validation.json": {
+      "bytes": 1691,
+      "sha256": "954f6841a06af3d17bafdc662485287a0b7f608009381a57c5cb9fd1480d32f7"
+    },
+    "verified_sources/land_registry/pp-2023.validation.json": {
+      "bytes": 52471,
+      "sha256": "37a32c28dd8e20c4eed6c4e9972393bc45914ec4293d532006fcb9ecbd715865"
+    },
+    "verified_sources/land_registry/pp-2024.validation.json": {
+      "bytes": 2839,
+      "sha256": "f199fa4ad4b41b2f4020ae2cdf2e35ec6216d35207a9bcf21ae805b0f307b479"
+    },
+    "verified_sources/nomis/claimant_count_bristol_lsoa11_2022_2024_raw.csv": {
+      "bytes": 1003876,
+      "sha256": "4b8d1181a648e32fb7e3660bde4a5297eea26708a1776f297da7bad952e28665"
+    },
+    "verified_sources/nomis/population_aged_16_64_bristol_lsoa11_2020_raw.csv": {
+      "bytes": 20527,
+      "sha256": "d24ca0a5d4d5c9ead24f44e5e1fd6172a49512d740e18d4ed95c7bb6401373f9"
+    }
+  }
+}
