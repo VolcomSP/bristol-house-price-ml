@@ -1,0 +1,15 @@
+feature_set,rank,feature,log_mae_increase_mean,log_mae_increase_std
+property_only,1,property_type,0.06709279,0.00251365
+property_only,2,duration,0.00669242,0.00039475
+property_only,3,month_sin,0.00052731,0.00026261
+property_only,4,old_new,0.00015967,0.00009645
+property_only,5,month_cos,0.00005514,0.00013612
+property_only,6,month_index,0.00000000,0.00000000
+enriched,1,claimant_rate_percent,0.10407794,0.00263286
+enriched,2,property_type,0.08137664,0.00242764
+enriched,3,duration,0.01304415,0.00081590
+enriched,4,log_total_crime,0.01022170,0.00063759
+enriched,5,old_new,0.00287608,0.00028932
+enriched,6,month_sin,0.00090348,0.00027785
+enriched,7,month_cos,0.00004450,0.00016807
+enriched,8,month_index,0.00000000,0.00000000

@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-09-02T14:23:52.602275+00:00",
+  "model_name": "Property-only random forest",
+  "estimator": "sklearn.ensemble.RandomForestRegressor",
+  "sklearn_version": "1.8.0",
+  "cohort": "PPD Category A",
+  "target": "log(price)",
+  "primary_back_transformation": "exp(predicted_log_price); parameter selection uses validation MAE",
+  "sensitivity_back_transformation": "exp(predicted_log_price) multiplied by development-set smearing factor",
+  "smearing_factor": 1.095646226395434,
+  "categorical_features": [
+    "property_type",
+    "duration",
+    "old_new"
+  ],
+  "numeric_features": [
+    "month_index",
+    "month_sin",
+    "month_cos"
+  ],
+  "neighbourhood_features_included": false,
+  "parameter_grid": {
+    "max_depth": [
+      8,
+      12,
+      null
+    ],
+    "min_samples_leaf": [
+      5,
+      20
+    ],
+    "max_features": [
+      0.7,
+      1.0
+    ]
+  },
+  "selected_parameters": {
+    "max_depth": 8,
+    "min_samples_leaf": 20,
+    "max_features": 0.7
+  },
+  "n_estimators": 240,
+  "random_state": 42,
+  "development_period": "2022-01-04 to 2023-12-22",
+  "test_period": "2024-01-02 to 2024-12-31",
+  "development_rows": 12785,
+  "test_rows": 5885,
+  "model_file": "models/06_property_only_random_forest.joblib",
+  "model_sha256": "802c6bd066ced84c944761186bfc721ce5ea0e7b72c03949dd423cccf6ca696c"
+}

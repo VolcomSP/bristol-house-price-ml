@@ -1,0 +1,5 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,mae_change_vs_property_rf_gbp,mae_improvement_vs_property_rf_percent,rmse_change_vs_property_rf_gbp,rmse_improvement_vs_property_rf_percent,r2_price_change_vs_property_rf
+Property-only random forest,2024 holdout,5885,124557.603518,212700.487919,77351.964071,24.223958,0.137199,0.309011,0.411384,0.233731,0.000000,0.000000,0.000000,0.000000,0.000000
+Enriched linear regression,2024 holdout,5885,115053.979653,199154.793771,71483.376566,22.482298,0.243594,0.284754,0.377822,0.353660,-9503.623865,7.629903,-13545.694148,6.368436,0.106395
+Enriched random forest,2024 holdout,5885,99123.726662,171204.004967,61076.412035,18.167271,0.441013,0.245351,0.331651,0.501977,-25433.876856,20.419369,-41496.482952,19.509350,0.303814
+Enriched random forest with smearing,2024 holdout,5885,99256.879672,168283.699585,62541.917609,18.739071,0.459921,0.245351,0.331651,0.501977,-25300.723846,20.312468,-44416.788334,20.882316,0.322722

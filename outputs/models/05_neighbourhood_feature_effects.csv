@@ -1,0 +1,3 @@
+feature,source_variable,coefficient_log_price,unit_definition,approximate_percent_change_per_unit,development_standard_deviation,approximate_percent_change_per_one_sd,development_p25,development_median,development_p75
+log1p_total_crime,total_crime,-0.04606211,One-unit increase in log(1 + monthly LSOA crime),-4.50173510,0.88367808,-3.98867902,2.19722458,2.70805020,3.21887582
+claimant_rate_percent,claimant_rate_percent,-0.05908575,One percentage-point increase in claimant rate,-5.73740632,2.35869137,-13.00895863,1.85185200,2.90979600,4.49346400

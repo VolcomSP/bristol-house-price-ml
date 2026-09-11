@@ -1,0 +1,6 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,mae_change_vs_property_baseline_gbp,mae_improvement_vs_property_baseline_percent,rmse_change_vs_property_baseline_gbp,rmse_improvement_vs_property_baseline_percent,r2_price_change_vs_property_baseline
+Training-median benchmark,2024 holdout,5885,138952.078845,236095.833207,85000.000000,25.555556,-0.063041,0.351677,0.471597,-0.006999,14434.509032,-11.592347,23458.126421,-11.031969,-0.200749
+Property-only linear regression,2024 holdout,5885,124517.569813,212637.706786,77015.787845,24.501211,0.137708,0.308638,0.410464,0.237154,0.000000,0.000000,0.000000,0.000000,0.000000
+Property-only linear regression with smearing,2024 holdout,5885,129961.597712,207708.311285,93578.869659,27.913244,0.177225,0.308638,0.410464,0.237154,5444.027899,-4.372096,-4929.395501,2.318213,0.039517
+Enriched linear regression,2024 holdout,5885,115053.979653,199154.793771,71483.376566,22.482298,0.243594,0.284754,0.377822,0.353660,-9463.590160,7.600205,-13482.913015,6.340791,0.105886
+Enriched linear regression with smearing,2024 holdout,5885,117759.179373,193665.094928,81459.308839,24.456241,0.284720,0.284754,0.377822,0.353660,-6758.390440,5.427660,-18972.611858,8.922506,0.147012

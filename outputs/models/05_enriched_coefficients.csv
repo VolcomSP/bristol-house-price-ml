@@ -1,0 +1,12 @@
+feature,coefficient_log_price,approximate_percent_change,interpretation
+intercept,13.51575637,,"Reference: Detached, Freehold, Established at time origin"
+property_type_F,-0.69955157,-50.31919614,Flat/Maisonette relative to Detached
+property_type_S,-0.31511125,-27.02923095,Semi-detached relative to Detached
+property_type_T,-0.32700559,-27.89202876,Terraced relative to Detached
+duration_L,-0.00563525,-0.56194064,Leasehold relative to Freehold
+old_new_Y,0.16474193,17.90887883,New build relative to Established
+month_index,-0.00043524,-0.04351427,One additional month from January 2022
+month_sin,-0.02144003,-2.12118235,Seasonal sine component; not interpreted alone
+month_cos,0.00961574,0.96621222,Seasonal cosine component; not interpreted alone
+log1p_total_crime,-0.04606211,-4.50173510,One-unit increase in log(1 + monthly LSOA crime)
+claimant_rate_percent,-0.05908575,-5.73740632,One percentage-point increase in claimant rate

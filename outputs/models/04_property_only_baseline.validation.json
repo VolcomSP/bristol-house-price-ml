@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-08-31T13:00:03.910422+00:00",
+  "source_dataset": "outputs/bristol_house_prices_combined_2022_2024.csv",
+  "source_sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+  "checks": {
+    "source_rows": 21968,
+    "category_a_rows": 18670,
+    "development_rows": 12785,
+    "test_rows": 5885,
+    "split_overlap_transaction_ids": 0,
+    "development_missing_model_values": 0,
+    "test_missing_model_values": 0,
+    "prediction_rows": 5885,
+    "prediction_nonfinite_values": 0,
+    "cross_validation_folds": 3
+  },
+  "test_metrics": {
+    "mae_gbp": 124517.56981304244,
+    "rmse_gbp": 212637.70678616906,
+    "r2_price": 0.13770845257941455,
+    "r2_log_price": 0.23715403832041104
+  },
+  "outputs": {
+    "04_baseline_split_summary.csv": {
+      "bytes": 576,
+      "sha256": "4ceeaab4a8cd79c01886d8219f2b43528f8e749abec2c35ed035c0e3dff5c159"
+    },
+    "04_baseline_cross_validation_metrics.csv": {
+      "bytes": 1942,
+      "sha256": "07177bdd65578dba199a2f3894de36fbdcdf62ef29d51b91c9787bec4b90d38d"
+    },
+    "04_baseline_test_metrics.csv": {
+      "bytes": 585,
+      "sha256": "2fff2524927a71d5e9fcb379161e58c944522784fc6658859ab49b5a596ff124"
+    },
+    "04_baseline_coefficients.csv": {
+      "bytes": 749,
+      "sha256": "6a9f0836af990a0b89de6a634cacf722a220919c296708ac67882ad77fcf35ec"
+    },
+    "04_baseline_2024_predictions.csv": {
+      "bytes": 1191164,
+      "sha256": "07274ebd083444f20f3d24705096dcf7133e60b707883e0e86fa5f917e178ea6"
+    },
+    "04_baseline_error_by_property_type.csv": {
+      "bytes": 2010,
+      "sha256": "3a81bf91c3dc94aec58b6e9af5b07e36ef75508ae12487eba012fe02eb29592b"
+    },
+    "04_baseline_monthly_performance.csv": {
+      "bytes": 2597,
+      "sha256": "07d1b8e54e06108364dbc723da438824ea6eb4b9235720ac6c1e367df3a8c016"
+    },
+    "04_baseline_actual_vs_predicted.png": {
+      "bytes": 245804,
+      "sha256": "0e71e17cfcdb3b644ae6d930e3370ce01d5284351e148e36b30a68ba71812bb4"
+    },
+    "04_baseline_model_performance.png": {
+      "bytes": 217906,
+      "sha256": "71a3ac83712febd99377ed8e6efa14385e8367778f8ffad1a0da5f347fba9c2e"
+    },
+    "04_property_only_baseline_findings.md": {
+      "bytes": 4227,
+      "sha256": "c7583036161fe2ef46b7dfafc1fbb067317a1707130ccc67e79309723adfe34c"
+    },
+    "04_property_only_baseline.metadata.json": {
+      "bytes": 1207,
+      "sha256": "918f9a0122dfbd896d2b49cea292e65629a437c1a29e02978cefe694c7a1540f"
+    },
+    "04_property_only_linear_baseline.joblib": {
+      "bytes": 3989,
+      "sha256": "9e4ecd9024c9638ae1232113085093233820e1b6e657c35ca79b6ce031e3a7d5"
+    }
+  }
+}

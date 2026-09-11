@@ -1,0 +1,13 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,property_type_label
+Training-median benchmark,Detached,260,391599.596154,572016.379130,247500.000000,43.691176,-0.804642,0.648466,0.808816,-1.374367,Detached
+Training-median benchmark,Flat/Maisonette,2035,113420.125307,143257.898174,102796.000000,36.734694,-0.130162,0.394568,0.487858,-0.347106,Flat/Maisonette
+Training-median benchmark,Semi-detached,1199,161199.862385,292643.812357,70000.000000,21.176471,-0.211009,0.337147,0.483950,-0.205431,Semi-detached
+Training-median benchmark,Terraced,2391,122052.906315,202986.598138,73500.000000,21.176471,-0.184429,0.290186,0.395288,-0.144458,Terraced
+Property-only linear regression,Detached,260,305645.207707,449122.062870,207439.237262,37.382128,-0.112508,0.434741,0.530489,-0.021412,Detached
+Property-only linear regression,Flat/Maisonette,2035,91562.022674,136494.974371,66368.972753,26.259791,-0.025975,0.323068,0.419667,0.003163,Flat/Maisonette
+Property-only linear regression,Semi-detached,1199,158403.495523,272934.464463,90378.768615,25.849503,-0.053381,0.328715,0.441673,-0.004021,Semi-detached
+Property-only linear regression,Terraced,2391,115877.723577,190107.820982,75505.858973,20.269908,-0.038902,0.272575,0.369271,0.001239,Terraced
+Property-only linear regression with smearing,Detached,260,307304.612472,434359.027783,229983.159552,40.431952,-0.040571,0.434741,0.530489,-0.021412,Detached
+Property-only linear regression with smearing,Flat/Maisonette,2035,96084.277999,134562.559991,77057.472783,28.502479,0.002869,0.323068,0.419667,0.003163,Flat/Maisonette
+Property-only linear regression with smearing,Semi-detached,1199,167005.280211,266585.864997,116404.412390,32.516612,-0.004947,0.328715,0.441673,-0.004021,Semi-detached
+Property-only linear regression with smearing,Terraced,2391,120934.323124,186071.841710,88920.497245,23.897889,0.004742,0.272575,0.369271,0.001239,Terraced

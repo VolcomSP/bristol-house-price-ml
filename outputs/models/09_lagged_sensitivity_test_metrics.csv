@@ -1,0 +1,7 @@
+model,evaluation_period,variant,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price
+"Property-only random forest, common cohort",2024 holdout,property_only,5885,124633.526413,212586.214626,77661.679953,24.352569,0.138126,0.309211,0.411300,0.234043
+"Property-only random forest, common cohort with smearing",2024 holdout,property_only,5885,130055.552439,207922.455729,93136.993189,27.758163,0.175527,0.309211,0.411300,0.234043
+"Contemporaneous enriched random forest, common cohort",2024 holdout,current_enriched,5885,99684.551995,171953.456334,61306.819136,18.488167,0.436109,0.246713,0.333183,0.497364
+"Contemporaneous enriched random forest, common cohort with smearing",2024 holdout,current_enriched,5885,99899.163950,169134.553163,63046.512452,18.853690,0.454445,0.246713,0.333183,0.497364
+Lagged enriched random forest,2024 holdout,lagged_enriched,5885,99654.695789,172679.877619,61862.871359,18.288538,0.431334,0.246579,0.333645,0.495970
+Lagged enriched random forest with smearing,2024 holdout,lagged_enriched,5885,99909.738663,169928.270203,63367.876003,18.848435,0.449313,0.246579,0.333645,0.495970

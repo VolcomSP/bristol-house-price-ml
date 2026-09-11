@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-09-02T15:02:52.496146+00:00",
+  "estimator": "sklearn.ensemble.HistGradientBoostingRegressor",
+  "sklearn_version": "1.8.0",
+  "cohort": "PPD Category A",
+  "target": "log(price)",
+  "property_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos"
+  ],
+  "enriched_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log_total_crime",
+    "claimant_rate_percent"
+  ],
+  "neighbourhood_features": [
+    "log_total_crime",
+    "claimant_rate_percent"
+  ],
+  "crime_transformation": "log1p(total_crime)",
+  "parameter_grid": {
+    "learning_rate": [
+      0.03,
+      0.07
+    ],
+    "max_leaf_nodes": [
+      15,
+      31
+    ],
+    "min_samples_leaf": [
+      20,
+      50
+    ]
+  },
+  "max_iter": 300,
+  "l2_regularization": 1.0,
+  "early_stopping": false,
+  "random_state": 42,
+  "selected_property_parameters": {
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 50
+  },
+  "selected_enriched_parameters": {
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20
+  },
+  "final_model_selection_rule": "lowest mean expanding-window validation MAE among enriched algorithms",
+  "selected_final_model_candidate": "Enriched random forest",
+  "development_period": "2022-01-04 to 2023-12-22",
+  "test_period": "2024-01-02 to 2024-12-31",
+  "development_rows": 12785,
+  "test_rows": 5885,
+  "model_files": {
+    "property_only": "models/08_property_gradient_boosting.joblib",
+    "enriched": "models/08_enriched_gradient_boosting.joblib"
+  },
+  "model_sha256": {
+    "property_only": "37579f505ac644dbdd1bb2d62da33294cc4f07c7a650ea316b563ec301354076",
+    "enriched": "f13012495f793f3df54fe52e8e8e8bdd58b7e46eef50f6c1b1745d982cd38122"
+  },
+  "validation_model_comparison": [
+    {
+      "model": "Enriched random forest",
+      "mae_gbp": 98720.76242133333,
+      "rmse_gbp": 164446.55292366666,
+      "r2_price": 0.419889,
+      "r2_log_price": 0.4454396666666667
+    },
+    {
+      "model": "Enriched gradient boosting",
+      "mae_gbp": 99070.90748748505,
+      "rmse_gbp": 165428.3444090721,
+      "r2_price": 0.41292728265241446,
+      "r2_log_price": 0.45098252189146343
+    },
+    {
+      "model": "Enriched linear regression",
+      "mae_gbp": 111136.25877266668,
+      "rmse_gbp": 188426.81940133334,
+      "r2_price": 0.23954066666666665,
+      "r2_log_price": 0.327584
+    }
+  ]
+}

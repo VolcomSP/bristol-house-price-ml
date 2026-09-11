@@ -1,0 +1,13 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,property_type_label
+"Property-only random forest, common cohort",Detached,260,305065.201736,444885.484108,208633.965820,36.926921,-0.091618,0.433532,0.526060,-0.004426,Detached
+"Property-only random forest, common cohort",Flat/Maisonette,2035,92228.958245,135567.947354,68730.809053,26.741442,-0.012086,0.325539,0.420778,-0.002122,Flat/Maisonette
+"Property-only random forest, common cohort",Semi-detached,1199,157406.618228,275372.311379,84299.106553,24.915398,-0.072283,0.326123,0.444510,-0.016961,Semi-detached
+"Property-only random forest, common cohort",Terraced,2391,116158.463072,189850.754835,75175.051497,20.661365,-0.036094,0.273316,0.369467,0.000179,Terraced
+"Contemporaneous enriched random forest, common cohort",Detached,260,230839.071910,371822.340728,116807.205044,23.155737,0.237491,0.318625,0.420539,0.358110,Detached
+"Contemporaneous enriched random forest, common cohort",Flat/Maisonette,2035,75469.083744,117033.362761,52251.103154,19.701099,0.245737,0.263444,0.354578,0.288393,Flat/Maisonette
+"Contemporaneous enriched random forest, common cohort",Semi-detached,1199,116224.085503,209137.523470,63676.825582,16.924610,0.381510,0.237178,0.325204,0.455683,Semi-detached
+"Contemporaneous enriched random forest, common cohort",Terraced,2391,97738.672462,155408.119967,66636.065730,17.881251,0.305740,0.229435,0.306532,0.311787,Terraced
+Lagged enriched random forest,Detached,260,223734.842536,358069.352232,123575.055121,23.714544,0.292855,0.309776,0.404802,0.405251,Detached
+Lagged enriched random forest,Flat/Maisonette,2035,75805.178474,116330.069016,51450.657467,19.623368,0.254775,0.264514,0.356404,0.281046,Flat/Maisonette
+Lagged enriched random forest,Semi-detached,1199,117039.785582,213481.447387,65841.566293,17.082448,0.355550,0.237303,0.324930,0.456600,Semi-detached
+Lagged enriched random forest,Terraced,2391,97742.611690,158361.996853,64621.127626,17.460800,0.279098,0.229095,0.308410,0.303328,Terraced

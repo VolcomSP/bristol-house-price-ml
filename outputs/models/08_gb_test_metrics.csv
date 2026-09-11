@@ -1,0 +1,5 @@
+model,evaluation_period,feature_set,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price
+Property-only gradient boosting,2024 holdout,property_only,5885,124524.232560,213169.389572,76908.023656,23.884838,0.133391,0.308920,0.411970,0.231545
+Property-only gradient boosting with smearing,2024 holdout,property_only,5885,129401.923448,208104.890148,91516.050250,27.372274,0.174080,0.308920,0.411970,0.231545
+Enriched gradient boosting,2024 holdout,enriched,5885,101832.170978,176775.652468,61830.354884,18.995548,0.404038,0.250667,0.338216,0.482066
+Enriched gradient boosting with smearing,2024 holdout,enriched,5885,101931.255356,173007.687116,65453.295676,19.469079,0.429173,0.250667,0.338216,0.482066

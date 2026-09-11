@@ -1,0 +1,9 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,property_type_label
+Property-only gradient boosting,Detached,260,305285.575127,443763.664652,217156.322341,36.855617,-0.086120,0.434077,0.526159,-0.004805,Detached
+Property-only gradient boosting,Flat/Maisonette,2035,92209.029080,135561.370192,69401.631658,26.582097,-0.011988,0.325486,0.420735,-0.001918,Flat/Maisonette
+Property-only gradient boosting,Semi-detached,1199,157226.871769,276988.966987,81908.023656,23.808481,-0.084910,0.325657,0.446841,-0.027652,Semi-detached
+Property-only gradient boosting,Terraced,2391,115972.591239,190569.028522,74606.624614,20.438329,-0.043949,0.272818,0.369920,-0.002278,Terraced
+Enriched gradient boosting,Detached,260,232832.572566,373291.435448,125624.752354,23.113632,0.231453,0.316841,0.415803,0.372485,Detached
+Enriched gradient boosting,Flat/Maisonette,2035,75523.129285,116192.681233,51890.693930,19.830130,0.256534,0.263668,0.353711,0.291870,Flat/Maisonette
+Enriched gradient boosting,Semi-detached,1199,120605.054550,215897.337069,62788.222431,17.859922,0.340882,0.244356,0.335694,0.419999,Semi-detached
+Enriched gradient boosting,Terraced,2391,100564.963964,164005.445370,66966.068871,18.415305,0.226802,0.235570,0.315840,0.269357,Terraced

@@ -1,0 +1,4 @@
+model,mean_validation_mae_gbp,mean_validation_rmse_gbp,mean_validation_r2_price,test_mae_gbp,test_rmse_gbp,test_r2_price,test_r2_log_price,validation_mae_improvement_vs_property_percent,test_mae_improvement_vs_property_percent,test_rmse_improvement_vs_property_percent,test_mae_change_vs_current_enriched_gbp
+"Property-only random forest, common cohort",121066.622579,200339.657316,0.140208,124633.526413,212586.214626,0.138126,0.234043,0.000000,0.000000,0.000000,24948.974418
+"Contemporaneous enriched random forest, common cohort",99215.309984,165520.663679,0.412447,99684.551995,171953.456334,0.436109,0.497364,18.048998,20.017868,19.113543,0.000000
+Lagged enriched random forest,99559.584666,167278.557400,0.400216,99654.695789,172679.877619,0.431334,0.495970,17.764630,20.041823,18.771837,-29.856206

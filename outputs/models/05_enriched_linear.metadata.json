@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-02T14:02:07.078538+00:00",
+  "model_name": "Enriched linear regression",
+  "estimator": "sklearn.linear_model.LinearRegression",
+  "sklearn_version": "1.8.0",
+  "cohort": "PPD Category A",
+  "target": "log(price)",
+  "primary_back_transformation": "exp(predicted_log_price); selected using validation MAE and compared directly with the property-only baseline",
+  "sensitivity_back_transformation": "exp(predicted_log_price) multiplied by development-set smearing factor",
+  "smearing_factor": 1.0819048376998306,
+  "categorical_features": [
+    "property_type",
+    "duration",
+    "old_new"
+  ],
+  "numeric_features": [
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log1p_total_crime",
+    "claimant_rate_percent"
+  ],
+  "neighbourhood_features": {
+    "log1p_total_crime": "log(1 + total_crime) in 2011 LSOA and sale month",
+    "claimant_rate_percent": "claimant count / 2020 working-age population * 100"
+  },
+  "development_period": "2022-01-04 to 2023-12-22",
+  "test_period": "2024-01-02 to 2024-12-31",
+  "development_rows": 12785,
+  "test_rows": 5885,
+  "randomness": "none; deterministic estimator and chronological split",
+  "model_file": "models/05_enriched_linear_model.joblib",
+  "model_sha256": "f70601849dac5d809b8d035b4495b256242b41b974e3d3b33734fddf5521b8cd"
+}

@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-09-03T05:35:14.061141+00:00",
+  "sources": {
+    "outputs/bristol_house_prices_combined_2022_2024.csv": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+    "outputs/candidate/crime_features_2022_2024_lsoa11_candidate.csv": "ba2c20aa144ba9098d384650c8c9d8ea925d231761209e7c9647541bbb1baa41",
+    "outputs/candidate/claimant_features_2022_2024_lsoa11_candidate.csv": "05b16d006c0599a96b95b93fcd0e02861d5ba8fe6713be6ae2c20eb2bf21b5d4",
+    "outputs/models/06_property_rf.metadata.json": "eed904a6504ed74c375d60dec4a98ad17cc006d911f14ca0a32b9c53a95cca13",
+    "outputs/models/07_enriched_rf.metadata.json": "3bd41be652760fd54e772c1eda62ebf1d989d7bad3aafd6cef135d00fa96f31e"
+  },
+  "alignment_checks": {
+    "source_sales_rows": 21968,
+    "crime_lsoa_month_rows": 9468,
+    "claimant_lsoa_month_rows": 9468,
+    "monthly_feature_rows": 9468,
+    "feature_alignment_rows": 21968,
+    "expected_january_2022_unmatched_rows": 505,
+    "category_a_january_2022_unmatched_rows": 442,
+    "actual_unmatched_rows": 505,
+    "matched_rows": 21463
+  },
+  "model_checks": {
+    "category_a_lag_complete_rows": 18228,
+    "development_rows": 12343,
+    "test_rows": 5885,
+    "split_overlap_transaction_ids": 0,
+    "development_missing_lagged_model_values": 0,
+    "test_missing_lagged_model_values": 0,
+    "cross_validation_folds": 3,
+    "prediction_rows": 5885,
+    "prediction_duplicate_transaction_ids": 0,
+    "prediction_nonfinite_values": 0
+  },
+  "test_metrics": {
+    "property_only_mae_gbp": 124633.52641313185,
+    "current_enriched_mae_gbp": 99684.55199509465,
+    "lagged_enriched_mae_gbp": 99654.69578881071,
+    "lagged_improvement_vs_property_percent": 20.04182288922965,
+    "lagged_change_vs_current_percent": -0.02995068512260847,
+    "lagged_enriched_rmse_gbp": 172679.87761853397,
+    "lagged_enriched_r2_price": 0.4313343004841085
+  },
+  "dashboard_model_decision": "Lagged enriched random forest",
+  "outputs": {
+    "09_lagged_neighbourhood_feature_alignment.csv": {
+      "bytes": 3069991,
+      "sha256": "73bbee16ca64e87d6c338c8224f527da762e55fc372267199167f3da3d39f590"
+    },
+    "09_lagged_sensitivity_cross_validation_metrics.csv": {
+      "bytes": 4213,
+      "sha256": "303e3de2497b75e33cece1a39303547935dc6cc547ccd909cdae4b1b20dc5a50"
+    },
+    "09_lagged_sensitivity_test_metrics.csv": {
+      "bytes": 1196,
+      "sha256": "f95ab88b5ac6fd450cc947673515eb97b55c85e785c0801c133c0135446f6e30"
+    },
+    "09_lagged_sensitivity_2024_predictions.csv": {
+      "bytes": 1897689,
+      "sha256": "9e001696888befa6e518aaa52149bc9038dd6754e3771f878618c62b696c193e"
+    },
+    "09_lagged_sensitivity_error_by_property_type.csv": {
+      "bytes": 2102,
+      "sha256": "e4d1e277751ee6b9b25b187b5bd385631a715fece298c75ee6c8f68972863d29"
+    },
+    "09_lagged_sensitivity_monthly_performance.csv": {
+      "bytes": 6225,
+      "sha256": "e25974de9a14f5e1bfe82b267222570d0ea8767e30ce5edd1fea07354da1b66f"
+    },
+    "09_lagged_sensitivity_model_comparison.csv": {
+      "bytes": 805,
+      "sha256": "34a0cd8d70cf1c20c549b4dd801c668b2e16635b69e626ca1e72c349506db1b8"
+    },
+    "09_lagged_sensitivity_performance.png": {
+      "bytes": 130866,
+      "sha256": "36f097a579cd545f99301b5b4797d3d8bdbbbd4173a8e6c5872b63a43c2b9de2"
+    },
+    "09_lagged_sensitivity_monthly_mae.png": {
+      "bytes": 190164,
+      "sha256": "b8de855325a85e7810b845593310080e9e397f984f2edc7b1168f00ed766147f"
+    },
+    "09_lagged_neighbourhood_findings.md": {
+      "bytes": 3174,
+      "sha256": "267fd6c086741837733d1523e16dfc3187a759b155d2dcd8451d9a58604dae8d"
+    },
+    "09_lagged_neighbourhood.metadata.json": {
+      "bytes": 1964,
+      "sha256": "318447ca928fa66a62419c3df037ba4fc0736a246edaa104ec3975009d53ad44"
+    },
+    "09_property_rf_same_cohort.joblib": {
+      "bytes": 2536857,
+      "sha256": "cc03c4ae18ae05c4e1b3bfdfa1e3e74258c055b7277d6688a65f0c2c7be851b7"
+    },
+    "09_current_enriched_rf_same_cohort.joblib": {
+      "bytes": 20537465,
+      "sha256": "46311e764be59d61f2b026636c804b9340f12cbb756bd935a9b6d83dfb8aba8f"
+    },
+    "09_lagged_enriched_random_forest.joblib": {
+      "bytes": 21208963,
+      "sha256": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399"
+    }
+  }
+}

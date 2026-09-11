@@ -1,0 +1,9 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,property_type_label
+Enriched random forest,Detached,260,231098.356836,372534.793160,117588.971950,23.007239,0.234566,0.320282,0.422009,0.353615,Detached
+Enriched random forest,Flat/Maisonette,2035,75076.882578,116548.354995,51497.588906,19.093457,0.251975,0.261979,0.353122,0.294228,Flat/Maisonette
+Enriched random forest,Semi-detached,1199,114827.748269,206467.186384,63432.780338,16.798732,0.397203,0.234519,0.320810,0.470291,Semi-detached
+Enriched random forest,Terraced,2391,97364.128987,155286.716125,65930.045075,17.743250,0.306825,0.228483,0.305974,0.314290,Terraced
+Enriched random forest with smearing,Detached,260,227248.481733,363220.138240,122041.335376,21.888484,0.272364,0.320282,0.422009,0.353615,Detached
+Enriched random forest with smearing,Flat/Maisonette,2035,75330.806094,115392.567071,52522.442241,19.766441,0.266738,0.261979,0.353122,0.294228,Flat/Maisonette
+Enriched random forest with smearing,Semi-detached,1199,114663.018824,202504.831784,65310.453925,17.561737,0.420118,0.234519,0.320810,0.470291,Semi-detached
+Enriched random forest with smearing,Terraced,2391,97976.989397,153165.967444,69005.133958,18.213584,0.325629,0.228483,0.305974,0.314290,Terraced

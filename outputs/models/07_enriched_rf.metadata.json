@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-09-02T14:45:46.050009+00:00",
+  "model_name": "Enriched random forest",
+  "estimator": "sklearn.ensemble.RandomForestRegressor",
+  "sklearn_version": "1.8.0",
+  "cohort": "PPD Category A",
+  "target": "log(price)",
+  "categorical_features": [
+    "property_type",
+    "duration",
+    "old_new"
+  ],
+  "numeric_features": [
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log_total_crime",
+    "claimant_rate_percent"
+  ],
+  "neighbourhood_features": [
+    "log_total_crime",
+    "claimant_rate_percent"
+  ],
+  "crime_transformation": "log1p(total_crime)",
+  "claimant_rate_definition": "monthly claimant count / fixed 2020 working-age population * 100",
+  "parameter_grid": {
+    "max_depth": [
+      8,
+      12,
+      null
+    ],
+    "min_samples_leaf": [
+      5,
+      20
+    ],
+    "max_features": [
+      0.7,
+      1.0
+    ]
+  },
+  "selected_parameters": {
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": 1.0
+  },
+  "n_estimators": 240,
+  "random_state": 42,
+  "development_period": "2022-01-04 to 2023-12-22",
+  "test_period": "2024-01-02 to 2024-12-31",
+  "development_rows": 12785,
+  "test_rows": 5885,
+  "model_file": "models/07_enriched_random_forest.joblib",
+  "model_sha256": "5f5f52c1dda8f3b01dba1be1e9a72785407bc2ac01388e621e8bc860c164d283"
+}

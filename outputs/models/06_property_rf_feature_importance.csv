@@ -1,0 +1,9 @@
+rank,feature,importance,importance_percent,interpretation
+1,property_type_F,0.54156498,54.15649764,Flat/Maisonette indicator
+2,duration_L,0.19016884,19.01688412,Leasehold indicator
+3,property_type_S,0.11017189,11.01718878,Semi-detached indicator
+4,property_type_T,0.06785876,6.78587597,Terraced indicator
+5,month_index,0.04012027,4.01202656,Continuous month from January 2022
+6,month_sin,0.01820531,1.82053087,Seasonal sine component
+7,old_new_Y,0.01682208,1.68220820,New-build indicator
+8,month_cos,0.01508788,1.50878787,Seasonal cosine component

@@ -1,0 +1,3 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price
+Property-only random forest,2024 holdout,5885,124557.603518,212700.487919,77351.964071,24.223958,0.137199,0.309011,0.411384,0.233731
+Property-only random forest with smearing,2024 holdout,5885,129973.535256,207922.996609,92802.834018,27.667498,0.175523,0.309011,0.411384,0.233731

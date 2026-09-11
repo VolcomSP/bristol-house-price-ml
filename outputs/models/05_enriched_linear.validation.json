@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-09-02T14:02:07.078839+00:00",
+  "source_dataset": "outputs/bristol_house_prices_combined_2022_2024.csv",
+  "source_sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+  "baseline_cross_validation_metrics_sha256": "07177bdd65578dba199a2f3894de36fbdcdf62ef29d51b91c9787bec4b90d38d",
+  "baseline_test_metrics_sha256": "2fff2524927a71d5e9fcb379161e58c944522784fc6658859ab49b5a596ff124",
+  "baseline_predictions_sha256": "07274ebd083444f20f3d24705096dcf7133e60b707883e0e86fa5f917e178ea6",
+  "checks": {
+    "source_rows": 21968,
+    "category_a_rows": 18670,
+    "development_rows": 12785,
+    "test_rows": 5885,
+    "split_overlap_transaction_ids": 0,
+    "development_missing_model_values": 0,
+    "test_missing_model_values": 0,
+    "prediction_rows": 5885,
+    "prediction_duplicate_transaction_ids": 0,
+    "prediction_nonfinite_values": 0,
+    "baseline_transaction_order_match": true,
+    "cross_validation_folds": 3
+  },
+  "test_metrics": {
+    "mae_gbp": 115053.97965319316,
+    "rmse_gbp": 199154.79377092767,
+    "r2_price": 0.24359376805816368,
+    "r2_log_price": 0.3536600212097063,
+    "mae_improvement_vs_property_baseline_percent": 7.60020467313907,
+    "rmse_improvement_vs_property_baseline_percent": 6.340791207197139
+  },
+  "outputs": {
+    "05_enriched_cross_validation_metrics.csv": {
+      "bytes": 1378,
+      "sha256": "395c5e04742019a8cf0894ea1ae794e47089fbd90705aa7133534ed1db3be902"
+    },
+    "05_enriched_test_metrics.csv": {
+      "bytes": 442,
+      "sha256": "81695c42f10368cdb61a6e2800e0b8294d619e64cc4f17caefa9f0337cd0ee31"
+    },
+    "05_enriched_coefficients.csv": {
+      "bytes": 934,
+      "sha256": "6f31f553dffcb0a0b0ac3108359218ec049c0cb0f3dc4464c0928106e1b952f2"
+    },
+    "05_enriched_2024_predictions.csv": {
+      "bytes": 1469207,
+      "sha256": "71e5f451a5ec9ad840a93a51da9eb486d73c275f3fb16261f00be945a7a82cc7"
+    },
+    "05_enriched_error_by_property_type.csv": {
+      "bytes": 1383,
+      "sha256": "21c83a553c7b00f6a225dbabbf5793752d170c1e914ad0b1cd42c737b86385df"
+    },
+    "05_enriched_monthly_performance.csv": {
+      "bytes": 2952,
+      "sha256": "5f482b5bd5d2ec9b1db616e9915a8fd0ac65b1323a8de3574a6f3d4d60ce2467"
+    },
+    "05_baseline_vs_enriched_comparison.csv": {
+      "bytes": 1328,
+      "sha256": "c64ec6908e4c4ee48f40ae8d7e6360fa358ef6c91f43dafdeb5fad614f616957"
+    },
+    "05_neighbourhood_feature_effects.csv": {
+      "bytes": 549,
+      "sha256": "2b104c3f991b47b9f32eabfc471c0f5850f6ea8450a731f026398fac92279c6e"
+    },
+    "05_enriched_actual_vs_predicted.png": {
+      "bytes": 421027,
+      "sha256": "7178cd34949724c471382368d4a1b41c61dc4c9c65e7efd0dc0855c90887809a"
+    },
+    "05_baseline_vs_enriched_performance.png": {
+      "bytes": 136588,
+      "sha256": "01f31dc375d4872f1acd0734e5b949de85b1fc3da92bbdc5acf62bcd5023ed29"
+    },
+    "05_enriched_linear_findings.md": {
+      "bytes": 3930,
+      "sha256": "ccbd71d7ba64b9abf5552d8a878a8de0abe329336afc3c17d1a9424f571ff1cb"
+    },
+    "05_enriched_linear.metadata.json": {
+      "bytes": 1319,
+      "sha256": "2157d61f01343bfad958d6095fa121acb8a0433e3ac8b5fcbf09028872d727cf"
+    },
+    "05_enriched_linear_model.joblib": {
+      "bytes": 4169,
+      "sha256": "f70601849dac5d809b8d035b4495b256242b41b974e3d3b33734fddf5521b8cd"
+    }
+  }
+}

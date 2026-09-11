@@ -1,0 +1,11 @@
+rank,feature,importance,importance_percent,interpretation
+1,claimant_rate_percent,0.50795794,50.79579371,Monthly claimant rate in the 2011 LSOA
+2,property_type_F,0.26625606,26.62560640,Flat/Maisonette indicator
+3,log_total_crime,0.08791715,8.79171544,Log monthly crime count in the 2011 LSOA
+4,month_index,0.04424734,4.42473404,Continuous month from January 2022
+5,month_sin,0.02322623,2.32262259,Seasonal sine component
+6,month_cos,0.01953332,1.95333228,Seasonal cosine component
+7,property_type_T,0.01707624,1.70762442,Terraced indicator
+8,old_new_Y,0.01589169,1.58916889,New-build indicator
+9,property_type_S,0.01238200,1.23820041,Semi-detached indicator
+10,duration_L,0.00551202,0.55120181,Leasehold indicator

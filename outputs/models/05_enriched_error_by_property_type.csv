@@ -1,0 +1,9 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price,property_type_label
+Enriched linear regression,Detached,260,280022.973060,426326.629986,181605.287330,32.941535,-0.002442,0.390301,0.486725,0.140163,Detached
+Enriched linear regression,Flat/Maisonette,2035,84294.327597,126167.237098,60193.961922,24.161293,0.123410,0.298908,0.389026,0.143409,Flat/Maisonette
+Enriched linear regression,Semi-detached,1199,141197.871451,254384.380351,76950.815623,21.640080,0.084940,0.285191,0.390641,0.214592,Semi-detached
+Enriched linear regression,Terraced,2391,110184.647734,178492.200356,75327.193611,20.525006,0.084174,0.261010,0.346782,0.119183,Terraced
+Enriched linear regression with smearing,Detached,260,279497.442758,411333.898101,206346.636307,32.607086,0.066825,0.390301,0.486725,0.140163,Detached
+Enriched linear regression with smearing,Flat/Maisonette,2035,86618.445914,124107.311189,68470.095670,25.144286,0.151800,0.298908,0.389026,0.143409,Flat/Maisonette
+Enriched linear regression with smearing,Semi-detached,1199,144460.335567,246509.955379,91163.873168,25.341582,0.140714,0.285191,0.390641,0.214592,Semi-detached
+Enriched linear regression with smearing,Terraced,2391,113286.054250,174166.823489,82445.876542,22.660291,0.128022,0.261010,0.346782,0.119183,Terraced

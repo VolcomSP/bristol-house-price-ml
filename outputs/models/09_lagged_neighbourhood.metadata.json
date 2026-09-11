@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-09-03T05:35:14.032202+00:00",
+  "estimator": "sklearn.ensemble.RandomForestRegressor",
+  "sklearn_version": "1.8.0",
+  "purpose": "one-month-lagged neighbourhood feature sensitivity",
+  "cohort": "PPD Category A with previous-month crime and claimant features",
+  "target": "log(price)",
+  "property_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos"
+  ],
+  "current_enriched_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log_current_total_crime",
+    "current_claimant_rate_percent"
+  ],
+  "lagged_enriched_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log_lagged_total_crime",
+    "lagged_claimant_rate_percent"
+  ],
+  "property_parameters": {
+    "max_depth": 8,
+    "min_samples_leaf": 20,
+    "max_features": 0.7
+  },
+  "enriched_parameters_frozen_for_current_and_lagged": {
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": 1.0
+  },
+  "n_estimators": 240,
+  "random_state": 42,
+  "development_period": "2022-02 to 2023-12",
+  "test_period": "2024-01 to 2024-12",
+  "development_rows": 12343,
+  "test_rows": 5885,
+  "lag_rule": "crime and claimant values from one calendar month before sale_month",
+  "dashboard_model_decision": "Lagged enriched random forest",
+  "model_files": {
+    "property_only": "models/09_property_rf_same_cohort.joblib",
+    "current_enriched": "models/09_current_enriched_rf_same_cohort.joblib",
+    "lagged_enriched": "models/09_lagged_enriched_random_forest.joblib"
+  },
+  "model_sha256": {
+    "property_only": "cc03c4ae18ae05c4e1b3bfdfa1e3e74258c055b7277d6688a65f0c2c7be851b7",
+    "current_enriched": "46311e764be59d61f2b026636c804b9340f12cbb756bd935a9b6d83dfb8aba8f",
+    "lagged_enriched": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399"
+  }
+}

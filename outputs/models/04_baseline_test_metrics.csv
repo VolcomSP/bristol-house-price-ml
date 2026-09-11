@@ -1,0 +1,4 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price
+Training-median benchmark,2024 holdout,5885,138952.078845,236095.833207,85000.000000,25.555556,-0.063041,0.351677,0.471597,-0.006999
+Property-only linear regression,2024 holdout,5885,124517.569813,212637.706786,77015.787845,24.501211,0.137708,0.308638,0.410464,0.237154
+Property-only linear regression with smearing,2024 holdout,5885,129961.597712,207708.311285,93578.869659,27.913244,0.177225,0.308638,0.410464,0.237154

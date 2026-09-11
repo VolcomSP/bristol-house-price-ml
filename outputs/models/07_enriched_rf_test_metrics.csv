@@ -1,0 +1,3 @@
+model,evaluation_period,rows,mae_gbp,rmse_gbp,median_absolute_error_gbp,median_absolute_percentage_error_percent,r2_price,mae_log_price,rmse_log_price,r2_log_price
+Enriched random forest,2024 holdout,5885,99123.726662,171204.004967,61076.412035,18.167271,0.441013,0.245351,0.331651,0.501977
+Enriched random forest with smearing,2024 holdout,5885,99256.879672,168283.699585,62541.917609,18.739071,0.459921,0.245351,0.331651,0.501977

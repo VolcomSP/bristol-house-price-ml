@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-09-02T14:23:52.604652+00:00",
+  "source_dataset": "outputs/bristol_house_prices_combined_2022_2024.csv",
+  "source_sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+  "linear_cross_validation_metrics_sha256": "07177bdd65578dba199a2f3894de36fbdcdf62ef29d51b91c9787bec4b90d38d",
+  "linear_test_metrics_sha256": "2fff2524927a71d5e9fcb379161e58c944522784fc6658859ab49b5a596ff124",
+  "linear_predictions_sha256": "07274ebd083444f20f3d24705096dcf7133e60b707883e0e86fa5f917e178ea6",
+  "checks": {
+    "source_rows": 21968,
+    "category_a_rows": 18670,
+    "development_rows": 12785,
+    "test_rows": 5885,
+    "split_overlap_transaction_ids": 0,
+    "development_missing_model_values": 0,
+    "test_missing_model_values": 0,
+    "parameter_candidates": 12,
+    "cross_validation_folds": 3,
+    "prediction_rows": 5885,
+    "prediction_duplicate_transaction_ids": 0,
+    "prediction_nonfinite_values": 0,
+    "linear_transaction_order_match": true
+  },
+  "test_metrics": {
+    "mae_gbp": 124557.6035177939,
+    "rmse_gbp": 212700.48791875207,
+    "r2_price": 0.13719919547222637,
+    "r2_log_price": 0.23373114141173512,
+    "mae_improvement_vs_linear_percent": -0.032151048927498836,
+    "rmse_improvement_vs_linear_percent": -0.029524929374477846
+  },
+  "outputs": {
+    "06_property_rf_hyperparameter_search.csv": {
+      "bytes": 1566,
+      "sha256": "050a470e770acf929250e3a48764487cf319e1d20fe55bf76f77a1afb4d892f6"
+    },
+    "06_property_rf_cross_validation_metrics.csv": {
+      "bytes": 1386,
+      "sha256": "9934549fab79b640533962ac82782ff1d32d02f3801dc32165cc98b14ec05643"
+    },
+    "06_property_rf_test_metrics.csv": {
+      "bytes": 444,
+      "sha256": "ed37d170341e41248a968efb56732de8ff74bdb577c878898ab4ef27c132d859"
+    },
+    "06_property_rf_feature_importance.csv": {
+      "bytes": 548,
+      "sha256": "00638ef4957e5331cfe3cc619a1c4d46b71a4083996092d97d0f11f67eb908b2"
+    },
+    "06_property_rf_2024_predictions.csv": {
+      "bytes": 1343959,
+      "sha256": "c0cd6e7e5179866b96b3e03c110481b2b6b35c85949476454cfac1d7aa44bc0c"
+    },
+    "06_property_rf_error_by_property_type.csv": {
+      "bytes": 1404,
+      "sha256": "8f984c7e512643795da114586dac5a6b8ffaf07b44d90010e30c8d41389f72fd"
+    },
+    "06_property_rf_monthly_performance.csv": {
+      "bytes": 2971,
+      "sha256": "620a9f4f82e508989c75574ae970b18f7f75dccf93ea4e6be5a67c187d247b5b"
+    },
+    "06_property_rf_vs_linear_comparison.csv": {
+      "bytes": 1270,
+      "sha256": "e0f30742a121545b1a40642896e38f23c19768857fae1633ea64e1ea90bd69d6"
+    },
+    "06_property_rf_actual_vs_predicted.jpg": {
+      "bytes": 140754,
+      "sha256": "8662e29390a0eafe466a3f4692fe84e2bce580d064713cb9f762c47ccc56e46b"
+    },
+    "06_property_rf_performance.png": {
+      "bytes": 143574,
+      "sha256": "aa3b1a60662412ab57a79612b425f518ff12347868fe6633e8acc3b82ae475d3"
+    },
+    "06_property_rf_findings.md": {
+      "bytes": 3588,
+      "sha256": "a349376a985ecb453ddf2be2bdc85fa66428dcf7c9c9a1eaaa025fa50be23c5d"
+    },
+    "06_property_rf.metadata.json": {
+      "bytes": 1337,
+      "sha256": "eed904a6504ed74c375d60dec4a98ad17cc006d911f14ca0a32b9c53a95cca13"
+    },
+    "06_property_only_random_forest.joblib": {
+      "bytes": 2622457,
+      "sha256": "802c6bd066ced84c944761186bfc721ce5ea0e7b72c03949dd423cccf6ca696c"
+    }
+  }
+}
