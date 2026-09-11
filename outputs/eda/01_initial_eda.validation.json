@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-08-31T11:47:53.178448+00:00",
+  "source_dataset": "outputs/bristol_house_prices_combined_2022_2024.csv",
+  "source_sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+  "rows": 21968,
+  "columns": 53,
+  "checks": {
+    "duplicate_transaction_ids": 0,
+    "exact_duplicate_rows": 0,
+    "core_missing_values": 0,
+    "months": 36,
+    "crime_unmatched": 0,
+    "claimant_unmatched": 0
+  },
+  "analysis_decisions": {
+    "primary_target": "log(price)",
+    "primary_cohort": "PPD Category A and property types D/S/T/F",
+    "outlier_policy": "retain in source; compare full cohort with p01-p99 sensitivity analysis"
+  },
+  "outputs": {
+    "01_dataset_quality_summary.csv": {
+      "bytes": 1065,
+      "sha256": "4a44a2096d3d71f4df9bb811d1a02d3265b2d7461e528afa36a7f8de376b3856"
+    },
+    "01_missingness_summary.csv": {
+      "bytes": 1704,
+      "sha256": "e6029af86bd46247fe9e9a0b09546c64dce590f31a9ab6db299dd976d4ecc3f5"
+    },
+    "01_monthly_summary.csv": {
+      "bytes": 1945,
+      "sha256": "3fded240f580ac499f3773f91597b664f628f04c791b59d7e39ede11c271dec5"
+    },
+    "01_candidate_cohort_summary.csv": {
+      "bytes": 254,
+      "sha256": "25c639faae1bc27f6c0a43d5a752372339fbaca0b2a5629b7aa9382f1ff1eb28"
+    },
+    "01_price_distribution_raw_vs_log.png": {
+      "bytes": 136060,
+      "sha256": "de5295289681f74ba88bac154b6c6fb318e830837a5f13bed7915e490fc0fb84"
+    },
+    "01_monthly_sales_and_median_price.png": {
+      "bytes": 224971,
+      "sha256": "53b8600659323edfaf7631e9a9d5a1a8783b7359b69250c2e61132018198af8c"
+    },
+    "01_initial_eda_findings.md": {
+      "bytes": 3252,
+      "sha256": "45bce478dd6175866a61920669189127dae63e2453b2740a2e1db1f41fb0a714"
+    }
+  }
+}

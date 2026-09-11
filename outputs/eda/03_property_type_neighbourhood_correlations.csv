@@ -1,0 +1,17 @@
+property_type_label,feature,transactions,spearman_with_log_price,pearson_with_log_price
+Detached,claimant_rate_percent,881,-0.566380,-0.481160
+Detached,crime_per_1000_working_age_proxy,881,-0.268776,-0.232620
+Detached,log1p_total_crime,881,-0.339219,-0.304696
+Detached,total_crime,881,-0.339219,-0.263406
+Flat/Maisonette,claimant_rate_percent,6391,-0.417331,-0.317710
+Flat/Maisonette,crime_per_1000_working_age_proxy,6391,-0.245405,-0.137023
+Flat/Maisonette,log1p_total_crime,6391,-0.185675,-0.152865
+Flat/Maisonette,total_crime,6391,-0.185675,-0.009464
+Semi-detached,claimant_rate_percent,3814,-0.543554,-0.474176
+Semi-detached,crime_per_1000_working_age_proxy,3814,-0.328750,-0.259025
+Semi-detached,log1p_total_crime,3814,-0.283373,-0.296168
+Semi-detached,total_crime,3814,-0.283373,-0.215786
+Terraced,claimant_rate_percent,7584,-0.409215,-0.336704
+Terraced,crime_per_1000_working_age_proxy,7584,-0.325862,-0.261736
+Terraced,log1p_total_crime,7584,-0.238007,-0.233264
+Terraced,total_crime,7584,-0.238007,-0.118814

@@ -1,0 +1,16 @@
+feature_label,feature,quintile,lsoa_count,transaction_count,mean_feature_value,median_feature_value,median_of_lsoa_median_prices,mean_of_lsoa_median_prices
+Mean monthly crime,mean_monthly_crime,Q1 low,53,3692,5.827568,6.000000,461500.000000,500735.528302
+Mean monthly crime,mean_monthly_crime,Q2,52,3539,10.059295,10.166667,346212.500000,387121.490385
+Mean monthly crime,mean_monthly_crime,Q3,55,3763,14.086364,14.166667,327000.000000,353505.663636
+Mean monthly crime,mean_monthly_crime,Q4,50,3372,19.653889,18.819444,306500.000000,317438.880000
+Mean monthly crime,mean_monthly_crime,Q5 high,53,4304,51.045597,38.166667,285000.000000,297922.452830
+"Mean crime per 1,000 working-age residents (proxy)",mean_crime_per_1000_working_age_proxy,Q1 low,53,3999,5.315536,5.258196,447500.000000,489914.820755
+"Mean crime per 1,000 working-age residents (proxy)",mean_crime_per_1000_working_age_proxy,Q2,52,3748,9.192674,9.384005,330999.500000,387668.557692
+"Mean crime per 1,000 working-age residents (proxy)",mean_crime_per_1000_working_age_proxy,Q3,53,3667,12.508576,12.369792,332000.000000,363949.273585
+"Mean crime per 1,000 working-age residents (proxy)",mean_crime_per_1000_working_age_proxy,Q4,52,3420,17.105181,16.744857,309500.000000,322235.461538
+"Mean crime per 1,000 working-age residents (proxy)",mean_crime_per_1000_working_age_proxy,Q5 high,53,3836,33.053588,31.416240,280000.000000,294417.735849
+Mean claimant rate,mean_claimant_rate_percent,Q1 low,53,3855,1.173690,1.264755,476000.000000,512648.377358
+Mean claimant rate,mean_claimant_rate_percent,Q2,52,4105,2.119866,2.181320,380500.000000,405606.730769
+Mean claimant rate,mean_claimant_rate_percent,Q3,53,3850,3.139729,3.088820,327500.000000,337235.943396
+Mean claimant rate,mean_claimant_rate_percent,Q4,52,3705,4.462271,4.482295,308400.000000,313572.173077
+Mean claimant rate,mean_claimant_rate_percent,Q5 high,53,3155,7.127445,6.431767,276250.000000,289297.622642

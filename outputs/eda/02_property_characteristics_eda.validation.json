@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-08-31T12:10:21.944950+00:00",
+  "source_dataset": "outputs/bristol_house_prices_combined_2022_2024.csv",
+  "source_sha256": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+  "source_rows": 21968,
+  "analysis_cohort": "PPD Category A",
+  "cohort_rows": 18670,
+  "checks": {
+    "cohort_duplicate_transaction_ids": 0,
+    "required_missing_values": 0,
+    "property_type_count_reconciliation": 18670,
+    "duration_count_reconciliation": 18670,
+    "new_build_count_reconciliation": 18670,
+    "year_count_reconciliation": 18670,
+    "small_duration_type_groups": 1,
+    "small_new_build_type_groups": 1
+  },
+  "interpretation_guardrails": [
+    "descriptive associations only",
+    "tenure is confounded with property type",
+    "groups below 50 transactions flagged",
+    "prices are nominal and not inflation-adjusted"
+  ],
+  "outputs": {
+    "02_property_type_summary.csv": {
+      "bytes": 441,
+      "sha256": "9e17933533f91addc5a3b1d1acc2b21b33f42d9e33a13baae95b04c4bb37d92d"
+    },
+    "02_duration_summary.csv": {
+      "bytes": 279,
+      "sha256": "6113c2096fa121b32bbe9acb17480359a59de7c56431c0966631fa4d3db25365"
+    },
+    "02_duration_by_property_type_summary.csv": {
+      "bytes": 860,
+      "sha256": "d6afd65312dc4d733c740c9b862d5becec4202ede37ff1fc21e66f2781cd2e00"
+    },
+    "02_new_build_summary.csv": {
+      "bytes": 283,
+      "sha256": "cdc661de1b7008939d4b26d8ef091d93104565ee98428ec738d962e1584400d1"
+    },
+    "02_new_build_by_property_type_summary.csv": {
+      "bytes": 875,
+      "sha256": "c6d308c6e79da350139169f99fce886cbc2e86f2f66a8ae7b18d713dda42dbdf"
+    },
+    "02_year_summary.csv": {
+      "bytes": 334,
+      "sha256": "e4b59fab08374c235cb0e9521fbd25d3a2f9ed685b7b845945e920f5dd9676c9"
+    },
+    "02_property_type_year_summary.csv": {
+      "bytes": 1068,
+      "sha256": "50dd3074b5f3ff9ae9d75a2d249e211c216df8dd726c455a9ae67ced354d87f3"
+    },
+    "02_median_price_by_property_type.png": {
+      "bytes": 109771,
+      "sha256": "3549147467f6bfda13f41b8089236b5112657cca4ac1c7c8e1737300fbf6d67c"
+    },
+    "02_tenure_and_new_build_by_property_type.png": {
+      "bytes": 230676,
+      "sha256": "b6f3ed98c1854ea2ef33abbce99b126744a5bc951314aacdb8d0131293d9c65c"
+    },
+    "02_annual_median_price_by_property_type.png": {
+      "bytes": 119423,
+      "sha256": "1d51a46015963849d54d9e6a46b0ca6676aa00d4dcf12ff53676e58ac3938fb8"
+    },
+    "02_property_characteristics_findings.md": {
+      "bytes": 3153,
+      "sha256": "f26003a20942d317b3261804ebcd089d8651db42d451dac5f90a71105738e7da"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+analysis_level,x_variable,y_variable,observations,spearman_correlation,pearson_correlation
+Category A transactions,total_crime,log_price,18670,-0.301023,-0.141472
+Category A transactions,log1p_total_crime,log_price,18670,-0.301023,-0.288450
+Category A transactions,crime_per_1000_working_age_proxy,log_price,18670,-0.315173,-0.247497
+Category A transactions,claimant_rate_percent,log_price,18670,-0.366920,-0.317352
+LSOA aggregate,mean_monthly_crime,median_log_price,263,-0.562047,-0.301150
+LSOA aggregate,mean_log1p_monthly_crime,median_log_price,263,-0.564772,-0.552932
+LSOA aggregate,mean_crime_per_1000_working_age_proxy,median_log_price,263,-0.605817,-0.492245
+LSOA aggregate,mean_claimant_rate_percent,median_log_price,263,-0.671932,-0.580945
+LSOA-month feature relationship,total_crime,claimant_rate_percent,9468,0.507899,0.197790
+LSOA-month feature relationship,crime_per_1000_working_age_proxy,claimant_rate_percent,9468,0.519821,0.435370
+LSOA-month feature relationship,total_crime,crime_per_1000_working_age_proxy,9468,0.949209,0.747933

@@ -1,0 +1,9 @@
+property_type_label,new_build_label,transaction_count,median_price,mean_price,p25_price,p75_price,minimum_price,maximum_price,share_of_cohort_percent,small_group_flag
+Flat/Maisonette,Established,5683,255000.00,288720.56,200000.00,342000.00,46250,2950000,,False
+Flat/Maisonette,New build,708,262250.00,301241.48,217500.00,337500.00,112500,1500000,,False
+Terraced,Established,7277,370000.00,413618.50,302500.00,456000.00,75000,3175000,,False
+Terraced,New build,307,320000.00,356717.25,270000.00,433750.00,145400,1000000,,False
+Semi-detached,Established,3690,360000.00,454908.00,300000.00,495000.00,83000,3950000,,False
+Semi-detached,New build,124,349000.00,355645.65,315000.00,370625.00,211295,630000,,False
+Detached,Established,858,571000.00,683055.75,420000.00,850000.00,160000,2900000,,False
+Detached,New build,23,360000.00,365885.52,336983.50,395475.00,291665,485000,,True

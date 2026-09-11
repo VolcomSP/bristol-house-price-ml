@@ -1,0 +1,9 @@
+property_type_label,duration_label,transaction_count,median_price,mean_price,p25_price,p75_price,minimum_price,maximum_price,share_of_cohort_percent,small_group_flag
+Flat/Maisonette,Freehold,84,277500.00,354411.14,217500.00,389817.00,65000,2950000,,False
+Flat/Maisonette,Leasehold,6307,255000.00,289251.21,202000.00,340000.00,46250,1695000,,False
+Terraced,Freehold,7087,365000.00,407756.09,300000.00,450000.00,75000,3175000,,False
+Terraced,Leasehold,497,431000.00,462065.59,315000.00,585000.00,95000,1610000,,False
+Semi-detached,Freehold,3639,360000.00,449508.57,300000.00,479000.00,83000,3950000,,False
+Semi-detached,Leasehold,175,390000.00,496850.70,310000.00,630000.00,87500,2075000,,False
+Detached,Freehold,851,556000.00,672636.84,410000.00,836250.00,160000,2900000,,False
+Detached,Leasehold,30,535250.00,735441.70,315000.00,985000.00,180000,2250000,,True

@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-08-31T12:39:55.161517+00:00",
+  "sources": {
+    "outputs/bristol_house_prices_combined_2022_2024.csv": "7471db8846491472e91f69201ca2d7b8696bfedf1b5953fcc1683acd568c18b6",
+    "outputs/candidate/crime_features_2022_2024_lsoa11_candidate.csv": "ba2c20aa144ba9098d384650c8c9d8ea925d231761209e7c9647541bbb1baa41",
+    "outputs/candidate/claimant_features_2022_2024_lsoa11_candidate.csv": "05b16d006c0599a96b95b93fcd0e02861d5ba8fe6713be6ae2c20eb2bf21b5d4"
+  },
+  "analysis_cohort": "PPD Category A",
+  "transaction_rows": 18670,
+  "lsoa_month_rows": 9468,
+  "lsoa_rows": 263,
+  "checks": {
+    "lsoa_month_duplicates": 0,
+    "panel_missing_feature_values": 0,
+    "transaction_missing_analysis_values": 0,
+    "panel_months": 36,
+    "panel_lsoas": 263,
+    "panel_crime_total": 190613,
+    "lsoa_transaction_reconciliation": 18670,
+    "lsoas_below_20_transactions": 4
+  },
+  "analysis_decisions": {
+    "primary_crime_feature_for_linear_model": "log1p(total_crime)",
+    "primary_socioeconomic_feature": "claimant_rate_percent",
+    "crime_rate_proxy_policy": "sensitivity analysis only; denominator is 2020 working-age population",
+    "causal_interpretation": "not supported by descriptive correlations"
+  },
+  "outputs": {
+    "03_neighbourhood_feature_distribution_summary.csv": {
+      "bytes": 1420,
+      "sha256": "efebd99fe7ced58d80f241d0492b2da9afdf30f9053aec45c1959172186dcf39"
+    },
+    "03_neighbourhood_correlation_summary.csv": {
+      "bytes": 1048,
+      "sha256": "1bbaccfc119177d88568cb19eabbf61a36aa1bd0c590a9224ac9b6375557fcd6"
+    },
+    "03_property_type_neighbourhood_correlations.csv": {
+      "bytes": 1016,
+      "sha256": "4b2b05260bd611fd44803695513ee0bb19ed925763e7e811543ced2a5128e8a1"
+    },
+    "03_lsoa_neighbourhood_summary.csv": {
+      "bytes": 43467,
+      "sha256": "fc91da119706749b6471a0f473caf600623a991a4b2b4e6ce789206b29b43c3b"
+    },
+    "03_neighbourhood_quintile_summary.csv": {
+      "bytes": 1927,
+      "sha256": "9af019e310c0825e9fdbd36feafc9494209f0b88a3e308d493ca057d5fe0cd98"
+    },
+    "03_monthly_neighbourhood_summary.csv": {
+      "bytes": 2350,
+      "sha256": "4027ab0494b92b2282cf2d7744924d90010da58e254811a27488b9a06a59aecb"
+    },
+    "03_neighbourhood_feature_distributions.png": {
+      "bytes": 163013,
+      "sha256": "8abb42500a6ec07d014f113821217c8035540c1a4edf0c4b6511a5e19b525e6c"
+    },
+    "03_lsoa_price_relationships.png": {
+      "bytes": 498529,
+      "sha256": "a873c97ec70dd23fa81ebedce35bd02ae58eca8d29a5ce1915e1dfdaabe84f15"
+    },
+    "03_neighbourhood_quintile_prices.png": {
+      "bytes": 235965,
+      "sha256": "030e133e9a67e9f9ee8050541245b39993f6ef4e6ad1ed3bb75a2f6a4fd74a2a"
+    },
+    "03_monthly_neighbourhood_features.png": {
+      "bytes": 262126,
+      "sha256": "52b7a7a77b7f09fe25b9e1bc0ae78c370e1bd8a9edaa5d5e56059b38546c0907"
+    },
+    "03_neighbourhood_conditions_findings.md": {
+      "bytes": 4267,
+      "sha256": "81b4fcdf5a04980f3cb525335b75ff7fe60e77c88e22326f30625c46811437c3"
+    }
+  }
+}
