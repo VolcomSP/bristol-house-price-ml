@@ -1,0 +1,76 @@
+Claimant count by sex and age,,
+ONS Crown Copyright Reserved [from Nomis on 13 July 2026],,
+Analysis   :,standard,
+Gender     :,Total,
+Age        :,All categories: Age 16+,
+measure    :,Claimant count,
+,,
+Date,"lacu2023:Bristol, City of","ward2025:Central (Bristol, City of)"
+,,
+Jan-22,12830,-
+Feb-22,12865,-
+Mar-22,12445,-
+Apr-22,11755,-
+May-22,11280,-
+Jun-22,11060,-
+Jul-22,10795,-
+Aug-22,10640,-
+Sep-22,10715,-
+Oct-22,10595,-
+Nov-22,10855,-
+Dec-22,10865,-
+Jan-23,10675,-
+Feb-23,10805,-
+Mar-23,10905,-
+Apr-23,11065,-
+May-23,10795,-
+Jun-23,10935,-
+Jul-23,10995,-
+Aug-23,10965,-
+Sep-23,11110,-
+Oct-23,11240,-
+Nov-23,11430,-
+Dec-23,11340,-
+Jan-24,11475,-
+Feb-24,11755,-
+Mar-24,11595,-
+Apr-24,11370,-
+May-24,11325,-
+Jun-24,11545,-
+Jul-24,12410,-
+Aug-24,12465,-
+Sep-24,12600,-
+Oct-24,12435,-
+Nov-24,12185,-
+Dec-24,12055,-
+,,
+,,
+,,
+-,These figures are missing.,
+,,
+,"In May 2024, the Department for Work and Pensions increased the",
+,administrative,
+,earnings threshold for full work search conditionality. This change,
+,affected,
+,"around 180,000 claimants, increasing the Claimant Count at the time of the",
+,"change. This policy change, along with two previous increases to the",
+,"administrative earnings threshold in September 2022 and January 2023,",
+,represent,
+,discontinuities in the Claimant Count series.,
+,,
+,,
+,Under Universal Credit a broader span of claimants are required to look for,
+,"work than under Jobseeker's Allowance. Therefore, as Universal Credit has been",
+,"rolled out, the number of people recorded as being on the Claimant Count rose.",
+,,
+,,
+,This dataset only includes claimant records with information to sufficiently,
+,classify them within the dataset. Totals from this dataset may not tally with,
+,the total number of claim records shown elsewhere as a small number of records,
+,do not have this information.,
+,,
+,,
+,All data are rounded to the nearest 5 and may not precisely add to the sum of,
+,"the number of people claiming JSA, published on Nomis, and the number of",
+,"people claiming Universal Credit required to seek work, published by DWP, due to",
+,independent rounding.,

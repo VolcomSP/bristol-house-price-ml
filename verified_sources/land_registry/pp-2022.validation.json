@@ -1,0 +1,62 @@
+{
+  "source": "HM Land Registry Price Paid Data yearly file",
+  "source_url": "https://price-paid-data.publicdata.landregistry.gov.uk/pp-2022.csv",
+  "retrieved_and_validated_utc": "2026-08-31T10:05:51.285260+00:00",
+  "year": 2022,
+  "file_name": "pp-2022.csv",
+  "bytes": 187868906,
+  "sha256": "1c6ed604089b95db4cffaa76f384f325f55b19c6fed54e485ebdd587f537cd7c",
+  "remote_metadata": {
+    "content_length": "187868906",
+    "content_type": "text/csv",
+    "last_modified": "Fri, 28 Aug 2026 05:12:10 GMT",
+    "etag": "\"5df7951c1318fff8e81a02dfcac2d4a1-23\""
+  },
+  "rows": 1077001,
+  "unique_transaction_ids": 1077001,
+  "malformed_rows": 0,
+  "duplicate_transaction_ids": 0,
+  "wrong_year_rows": 0,
+  "invalid_prices": 0,
+  "missing_postcodes": 2973,
+  "months": [
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12"
+  ],
+  "monthly_row_counts": {
+    "2022-01": 71571,
+    "2022-02": 81696,
+    "2022-03": 95090,
+    "2022-04": 85120,
+    "2022-05": 84571,
+    "2022-06": 89669,
+    "2022-07": 93717,
+    "2022-08": 96266,
+    "2022-09": 97607,
+    "2022-10": 93293,
+    "2022-11": 95578,
+    "2022-12": 92823
+  },
+  "bristol_lad_rows_by_postcode_lookup": 8093,
+  "city_of_bristol_district_rows": 8114,
+  "previous_output_rows": 8091,
+  "source_bristol_ids_absent_from_previous_output": [
+    "{5834E4E8-62BE-29C7-E063-4804A8C015BC}",
+    "{5834E4E8-6DA1-29C7-E063-4804A8C015BC}",
+    "{5834E4E9-94F4-29C7-E063-4804A8C015BC}"
+  ],
+  "previous_output_ids_absent_from_source": [
+    "{34222871-FA89-4D2B-E063-4704A8C07853}"
+  ],
+  "ends_with_newline": true
+}
