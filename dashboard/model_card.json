@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-03T06:13:15.329610+00:00",
+  "project": "Predicting house prices in Bristol using machine learning and socio-economic data",
+  "selected_model": "Lagged enriched random forest",
+  "estimator": "sklearn.ensemble.RandomForestRegressor",
+  "target": "log(price)",
+  "inverse_transformation": "exp(predicted log price); no smearing correction for the headline estimate",
+  "training_period": "2022-02 to 2023-12",
+  "dashboard_supported_period": "2024-01 to 2024-12",
+  "dashboard_scope": "Historical Bristol sale-price exploration; not a current professional valuation",
+  "user_inputs": [
+    "postcode",
+    "property type",
+    "tenure",
+    "new-build status",
+    "sale month"
+  ],
+  "derived_inputs": [
+    "2011 LSOA",
+    "previous-month total crime",
+    "previous-month claimant rate",
+    "time features"
+  ],
+  "model_features": [
+    "property_type",
+    "duration",
+    "old_new",
+    "month_index",
+    "month_sin",
+    "month_cos",
+    "log_lagged_total_crime",
+    "lagged_claimant_rate_percent"
+  ],
+  "model_file": "models/09_lagged_enriched_random_forest.joblib",
+  "model_sha256": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399",
+  "test_rows": 5885,
+  "test_mae_gbp": 99654.695789,
+  "test_rmse_gbp": 172679.877619,
+  "test_r2_price": 0.431334,
+  "test_median_absolute_percentage_error_percent": 18.288538,
+  "limitations": [
+    "The Land Registry data does not include bedrooms, floor area, condition or exact property amenities.",
+    "Crime and claimant inputs describe the surrounding LSOA, not the individual property.",
+    "The dashboard supports the independently tested 2024 period and is not a live 2026 valuation service.",
+    "The results are predictive associations and do not establish causal effects."
+  ]
+}

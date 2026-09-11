@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-09-03T06:13:15.344907+00:00",
+  "checks": {
+    "postcode_rows": 17844,
+    "active_postcodes": 11735,
+    "terminated_postcodes": 6109,
+    "duplicate_postcode_keys": 0,
+    "lsoa_count": 263,
+    "supported_sale_months": 12,
+    "lagged_feature_rows": 3156,
+    "missing_lagged_feature_values": 0,
+    "validation_case_rows": 6,
+    "model_feature_order_matches": true
+  },
+  "sources": {
+    "verified_sources/ONSPD_MAY_2026_UK_BS_complete.csv": {
+      "bytes": 20242507,
+      "sha256": "addda8c1d04a4ea8126d82fda4c195afc4cfe7ba92149d05d18d0c3dc507e390"
+    },
+    "outputs/candidate/crime_features_2022_2024_lsoa11_candidate.csv": {
+      "bytes": 464982,
+      "sha256": "ba2c20aa144ba9098d384650c8c9d8ea925d231761209e7c9647541bbb1baa41"
+    },
+    "outputs/candidate/claimant_features_2022_2024_lsoa11_candidate.csv": {
+      "bytes": 1587910,
+      "sha256": "05b16d006c0599a96b95b93fcd0e02861d5ba8fe6713be6ae2c20eb2bf21b5d4"
+    },
+    "outputs/models/09_lagged_sensitivity_test_metrics.csv": {
+      "bytes": 1196,
+      "sha256": "f95ab88b5ac6fd450cc947673515eb97b55c85e785c0801c133c0135446f6e30"
+    },
+    "models/09_lagged_enriched_random_forest.joblib": {
+      "bytes": 21208963,
+      "sha256": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399"
+    }
+  },
+  "outputs": {
+    "data/bristol_postcode_lsoa11.csv": {
+      "bytes": 788266,
+      "sha256": "49587511b6c638b65443e3d06a20aeccd065644797e1f2ad2bb2ece6207b4e87"
+    },
+    "data/lagged_neighbourhood_features_2024.csv": {
+      "bytes": 166614,
+      "sha256": "a89e29be73f3557ca4ec5efce995fb5095fbe4fcc5979611c82b993bcfa8aec6"
+    },
+    "data/model_performance_2024.csv": {
+      "bytes": 294,
+      "sha256": "4c195f70e8e20bb8ace854076fc3828a137ec2182219afec2f143f5ae263e046"
+    },
+    "data/dashboard_validation_cases.csv": {
+      "bytes": 421,
+      "sha256": "e06690d9b1940c407a38ca0444f88cfbb7395b2455eefbee33d34c96e5fb933f"
+    },
+    "model_card.json": {
+      "bytes": 1791,
+      "sha256": "d1011a55cf8ad651f9ff57b922daabe07f650a70007968143b48bff7d05c144a"
+    }
+  },
+  "artefact_files": {
+    "analysis/10_prepare_dashboard_artefact.py": {
+      "bytes": 15527,
+      "sha256": "0f304b7f4caf7bd0d5f741d301b32401eb62538c5f958ddd94fdfc7f373ad058"
+    },
+    "dashboard/app.py": {
+      "bytes": 7059,
+      "sha256": "957da303168ba0c24562dcac9811d58392a441f7a45098ffc87b21f19d22e27b"
+    },
+    "dashboard/prediction.py": {
+      "bytes": 5996,
+      "sha256": "a8511f13074fc93c80f66e1514189ee4e41a0dd796c853d9414447dd940d0249"
+    },
+    "dashboard/requirements.txt": {
+      "bytes": 83,
+      "sha256": "1b9f87e5cebf00f3034eb88e53a3741a2f17673d51cb41f5a284abdda4a8c123"
+    },
+    "dashboard/README.md": {
+      "bytes": 1952,
+      "sha256": "5b11802f044a39654cbc17859c05cdecced90eca134c65d30749298d8cd139a3"
+    },
+    "dashboard/ARTEFACT_EVALUATION.md": {
+      "bytes": 3270,
+      "sha256": "7ad4e4ae4faf8c32e51072ebb61bf36b59cec7298efe9985dcf2b905609c0236"
+    },
+    "tests/test_dashboard_prediction.py": {
+      "bytes": 2555,
+      "sha256": "18bf56ecc79a49bb44092a26ae547ea2b93c7a68e4cc7755965831f1136949f0"
+    },
+    ".streamlit/config.toml": {
+      "bytes": 202,
+      "sha256": "87d8e8c3463816997c93dfde6c11c48cd1555f0af7388706fac85d2ac3475c85"
+    },
+    "models/09_lagged_enriched_random_forest.joblib": {
+      "bytes": 21208963,
+      "sha256": "76f14f86eb5f76adec3ebe723892490a524edba3bd907ed97b9de91abb722399"
+    },
+    "dashboard/data/bristol_postcode_lsoa11.csv": {
+      "bytes": 788266,
+      "sha256": "49587511b6c638b65443e3d06a20aeccd065644797e1f2ad2bb2ece6207b4e87"
+    },
+    "dashboard/data/lagged_neighbourhood_features_2024.csv": {
+      "bytes": 166614,
+      "sha256": "a89e29be73f3557ca4ec5efce995fb5095fbe4fcc5979611c82b993bcfa8aec6"
+    },
+    "dashboard/data/model_performance_2024.csv": {
+      "bytes": 294,
+      "sha256": "4c195f70e8e20bb8ace854076fc3828a137ec2182219afec2f143f5ae263e046"
+    },
+    "dashboard/data/dashboard_validation_cases.csv": {
+      "bytes": 421,
+      "sha256": "e06690d9b1940c407a38ca0444f88cfbb7395b2455eefbee33d34c96e5fb933f"
+    },
+    "dashboard/model_card.json": {
+      "bytes": 1791,
+      "sha256": "d1011a55cf8ad651f9ff57b922daabe07f650a70007968143b48bff7d05c144a"
+    }
+  }
+}
